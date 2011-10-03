@@ -1,0 +1,387 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
+   <PATCH nodename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\0. Basic principles.v4p" filename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\template.v4p" locked="0" systemname="template">
+   <BOUNDS height="13530" left="-7980" top="1005" type="Window" width="8370">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="0" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="150" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="1095" left="225" top="150" type="Box" width="7665">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|0. Basic principles|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="42">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="1" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5025" top="5760" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="345" left="5025" top="5760" type="Box" width="2535">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[5 - Pins]&cr;&lf;Nodes need a way of communicating with other nodes.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;The &apos;cable&apos; that connects 2 nodes together is called a &lt;concept&gt;Link&lt;/concept&gt;, and the &apos;socket&apos; where the cable connects to the node is called a &lt;concept&gt;Pin&lt;/concept&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;In this documentation, we demonstrate a pin with the following style: &lt;pin&gt;style&lt;/pin&gt;. This could denote either a specific pin such as &lt;node&gt;+ (Value)&lt;/node&gt; node&apos;s &lt;pin&gt;Input 1&lt;/pin&gt;, or more casually refer to a general pin, such as the &lt;pin&gt;input&lt;/pin&gt; of an &lt;node&gt;IOBox&lt;/node&gt;.&cr;&lf;&cr;&lf;Output pins are on the bottom of the nodes&cr;&lf;Input pins are on the top of the nodes.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;An &lt;pin&gt;input&lt;/pin&gt; can only be connected to 1 other node&apos;s &lt;pin&gt;output &lt;/pin&gt; at any time.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;An &lt;pin&gt;output&lt;/pin&gt; can be connected to many other nodes&apos; &lt;pin&gt;input &lt;/pin&gt; at any time.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Roll your mouse over a pin to see what value it has (works for both inputs and outputs).&cr;&lf;&lt;br /&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="2" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="105" top="11895" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="750" left="105" top="11895" type="Box" width="5325">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Created by Elliot Woods.&cr;&lf;Distributed under the MIT license (check file LICENSE) for details.&cr;&lf;Generally you can do whatever you want with these files. have fun!|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="5" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5805" top="2640" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="540" left="5805" top="2640" type="Box" width="2085">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Author">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="6" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="1260" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="1155" left="225" top="1260" type="Box" width="7665">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Description">
+   </PIN>
+   </NODE>
+   <INFO author="Elliot Woods" description="Basic principles of the VVVV graph. Here we create a patch which adds up 2 numbers. You can think of a patch a little bit like an electrical circuit." tags="nodes, links">
+   </INFO>
+   <NODE componentmode="Hidden" filename="Subpatches\GetMetadata (VVVV).v4p" hiddenwhenlocked="1" id="10" nodename="GetMetadata (VVVV)" systemname="GetMetadata (VVVV)">
+   <BOUNDS height="100" left="5820" top="1800" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   <BOUNDS height="3465" left="14520" top="5520" type="Window" width="4680">
+   </BOUNDS>
+   <PIN pinname="Author" visible="1">
+   </PIN>
+   <PIN pinname="Description" visible="1">
+   </PIN>
+   <PIN pinname="Tags" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="8" nodename="PatchAlias (VVVV)" systemname="PatchAlias (VVVV)">
+   <BOUNDS height="100" left="5820" top="1350" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="10" dstpinname="Patch" hiddenwhenlocked="1" srcnodeid="8" srcpinname="Patch">
+   </LINK>
+   <LINK dstnodeid="6" dstpinname="Input String" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="10" srcpinname="Description">
+   <LINKPOINT x="6445" y="2205">
+   </LINKPOINT>
+   <LINKPOINT x="245" y="2355">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="InABox" id="11" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="2640" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="540" left="225" top="2640" type="Box" width="5520">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Tags">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="11" dstpinname="Input String" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="10" srcpinname="Tags">
+   <LINKPOINT x="7015" y="2293">
+   </LINKPOINT>
+   <LINKPOINT x="275" y="2448">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="5" dstpinname="Input String" hiddenwhenlocked="1" srcnodeid="10" srcpinname="Author">
+   </LINK>
+   <NODE componentmode="InABox" id="12" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="1065" top="5055" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="660" left="1065" top="5055" type="Box" width="1965">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="24">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="13" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="4935" top="5040" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="660" left="4935" top="5040" type="Box" width="1965">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="24">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="14" nodename="Add (Value)" systemname="Add (Value)">
+   <BOUNDS height="270" left="1050" top="7095" type="Node" width="3945">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="14" dstpinname="Input 1" srcnodeid="12" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="14" dstpinname="Input 2" srcnodeid="13" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="16" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="1050" top="8355" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="660" left="1050" top="8355" type="Box" width="1965">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="24">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="16" dstpinname="Y Input Value" srcnodeid="14" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="InABox" id="22" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="1110" top="4680" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="345" left="1110" top="4680" type="Box" width="2535">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[4 - IOBoxes]&cr;&lf;An &lt;node&gt;IOBox&lt;/node&gt; is a special node. It is the most basic method for inputting data into VVVV (input), and for seeing the data for ourselves (output).&cr;&lf;We can only edit data inside an IOBox if it has nothing connected to its &lt;pin&gt;input&lt;/pin&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Try changing the value in a basic way by double clicking &lt;click2/&gt;&lt;lmb/&gt; on it, and entering a value manually, then press &lt;key&gt;Enter&lt;/key&gt;.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="24" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="1050" top="10305" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="660" left="1050" top="10305" type="Box" width="1965">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="24">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="25" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="3450" top="10305" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="660" left="3450" top="10305" type="Box" width="1965">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="24">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="24" dstpinname="Y Input Value" srcnodeid="16" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="25" dstpinname="Y Input Value" linkstyle="VHV" srcnodeid="16" srcpinname="Y Output Value">
+   <LINKPOINT x="1110" y="9645">
+   </LINKPOINT>
+   <LINKPOINT x="3450" y="9645">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="InABox" id="26" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="1305" top="7815" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="345" left="1305" top="7815" type="Box" width="2535">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[7. Input pins]&cr;&lf;Data sent via a link is sent from an output pin and received on an input pin.&cr;&lf;Input pins are the pins across the top of a node.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Input pins have different names depending on their function. For basic nodes, the main input is called &lt;pin&gt;Input&lt;/pin&gt;. Put data in there to get a result.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;There may also be other input pins also called &quot;Input&quot;, e.g. a &lt;node&gt;+ (Value)&lt;/node&gt; node has by default 2 inputs, &lt;pin&gt;Input 1&lt;/pin&gt;, &lt;pin&gt;Input 2&lt;/pin&gt; which are the 2 numbers to be added together.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Sometimes it&apos;s appropriate for the input pins to have different names, e.g. a &lt;node&gt;HSL (Color, Join)&lt;/node&gt; node has 4 inputs: &lt;pin&gt;Hue&lt;/pin&gt;, &lt;pin&gt;Saturation&lt;/pin&gt;, &lt;pin&gt;Lightness&lt;/pin&gt;, &lt;pin&gt;Alpha&lt;/pin&gt;. These are joined together into 1 colour value on the &lt;pin&gt;Output&lt;/pin&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Input pins can generally store values. If you connect to an input pin, then disconnect, it will store the last value given to it.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Sometimes the input pins are attributes for how that node should behave, e.g. A &lt;node&gt;Renderer (EX9)&lt;/node&gt; node has a &lt;pin&gt;Fullscreen&lt;/pin&gt; pin, which allows you to set that renderer&apos;s window to be fullscreen.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="31" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="660" top="3285" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="345" left="660" top="3285" type="Box" width="2535">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[0 - The patch]&cr;&lf;When we open VVVV, we get a blank square.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;This blank square is a view of a new blank VVVV document, which is called a &lt;concept&gt;Patch&lt;/concept&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Patches define &apos;programs&apos; in VVVV. A patch can perform all sorts of tasks. It can act on its own, or can perform a specific function within a bigger patch. When one patch is nested within another, it is called a &lt;concept&gt;Subpatch&lt;/concept&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;The &lt;concept&gt;Graph&lt;/concept&gt; is a term given to everything that VVVV is thinking about. This word can commonly be used interchangeable with the &apos;Patch&apos;, but the Graph is also a more general term which incorporates all running patches and subpatches.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Patches are made entirely out of &lt;concept&gt;Nodes&lt;/concept&gt; and &lt;concept&gt;Links&lt;/concept&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Almost all of the interface for VVVV is handled by nodes, and therefore there are no toolbars, menu bars, etc. to start with. The main exception to this is the &lt;concept&gt;Main Menu&lt;/concept&gt;.&cr;&lf;&lt;br /&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="32" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="660" top="3585" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="345" left="660" top="3585" type="Box" width="2535">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[1 - Creating nodes]&cr;&lf;&lt;click2/&gt; &lt;lmb /&gt;  in an empty space in the patch window.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;This will bring up the &lt;concept&gt;NodeBrowser&lt;/concept&gt; which you can use to create new nodes.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;If you start typing, the NodeBrowser will begin searching for new nodes.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Use &lt;key&gt;Up&lt;/key&gt;/&lt;key&gt;Down&lt;/key&gt; on the keyboard to select different nodes within the list. &cr;&lf;Use the &lt;scroll /&gt; scroll on the mouse to scroll the list.&cr;&lf;Press &lt;key&gt;Enter&lt;/key&gt; on the keyboard or click on an item in the list to create the node.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;&lt;click /&gt;&lt;rmb /&gt; on the text box at the top of the NodeBrowser, to browse for nodes by category.&cr;&lf;&lt;br /&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="33" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="660" top="3885" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="345" left="660" top="3885" type="Box" width="2535">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[2 - Scrolling]&cr;&lf;There are 2 main ways to scroll around the patch in VVVV. You can either:&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;&lt;ol&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;Drag right mouse button &lt;hold/&gt;&lt;rmb/&gt; &lt;/b&gt;&lt;br /&gt;&cr;&lf;Move your mouse over an empty area of the patch, hold down your right mouse button and then start moving your mouse. Release the mouse &lt;release/&gt;&lt;rmb/&gt; to stop scrolling&lt;br /&gt;You will notice that the whole patch will move with respect to the window. This is the most common form of scrolling. But WARNING! Be careful not to &lt;click/&gt;&lt;rmb/&gt;on any links in the patch. It&apos;s common for beginners to scroll like this with their mouse over a link. Right clicking on a link deletes it!&lt;/li&gt;&cr;&lf;&cr;&lf;&lt;li&gt;&lt;b&gt;With the scroll wheel &lt;scroll /&gt;&lt;/b&gt; &lt;br /&gt;&cr;&lf;Safer for busy patches (for the link-deleting reason described above). You can scroll up/down using &lt;scroll /&gt;. You can scroll left/right with &lt;key&gt;Alt&lt;/key&gt;+&lt;scroll /&gt; and using the scroll wheel. You can scroll super-quick using &lt;key&gt;Ctrl&lt;/key&gt;+&lt;scroll /&gt;.&lt;/li&gt;&cr;&lf;&lt;/ol&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="34" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="1275" top="6360" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="345" left="1275" top="6360" type="Box" width="2535">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[6 - Links]&cr;&lf;As mentioned before, a connection between 2 nodes is called a &apos;Link&apos;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;A link is made between an &lt;pin&gt;input&lt;/pin&gt; (on the top of a node) and an &lt;pin&gt;output&lt;/pin&gt; (the bottom of another node). We can think of the data flowing from the ouput of one node, down the link, and into the input pin of the &apos;downstream&apos; node.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;To make a link, first select a pin to start making the connection by left clicking &lt;click/&gt;&lt;lmb/&gt; on the pin. You must remember to click (and not to drag, especially if you&apos;re used to Max/MSP style linking).&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Once you have clicked once and made sure to release the mouse button &lt;release/&gt;&lt;lmb/&gt;, you are now ready to select the target pin for your link. Pins that you are allowed to connect to (i.e pins that you can make a meaningful connection with) are highlighted by becoming graphically larger on the screen. Click &lt;click/&gt;&lt;lmb/&gt; on a target pin to complete the link.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;To delete a link. Right click on it, or select it by left clicking on it, and hit &lt;key&gt;Delete&lt;/key&gt;.&cr;&lf;&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="35" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="660" top="4185" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="345" left="660" top="4185" type="Box" width="2535">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[3 - Main Menu]&cr;&lf;The main menu contains a set of functions. All except a couple of which can be accessed without using the main menu.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;To open the main menu, move your mouse over an empty area of the patch and click the middle mouse button &lt;click/&gt;&lt;mmb/&gt;. If you dont have a middle mouse button, then use &lt;key&gt;Shift&lt;/key&gt;+&lt;click/&gt;&lt;rmb/&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;The main menu performs common tasks such as Open, Close, Save, Quit, Copy, Paste, etc. as well as some VVVV specific functions which may help you debug your patch, direct you to help, speed up your patch.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="37" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="3555" top="9660" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="345" left="3555" top="9660" type="Box" width="2535">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[8 - Links again]&cr;&lf;1 output can be linked to several inputs&cr;&lf;&lt;br/&gt;&cr;&lf;1 input can only be linked to 1 output&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Links can be created by either first selecting the output, then the input, or vice versa. (Both times, using &lt;click/&gt;&lt;lmb/&gt;&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;If you want to make a link from 1 output to multiple inputs, then you can either create them all one by one using &lt;click/&gt;&lt;lmb/&gt;, or you can create them more quickly by starting to create the link from the &lt;pin&gt;output&lt;/pin&gt; pin using the right mouse button &lt;click/&gt;&lt;rmb/&gt;. Now every time you &lt;click/&gt;&lt;lmb/&gt; an &lt;pin&gt;input&lt;/pin&gt; to make a connection, you will still have the &lt;pin&gt;output&lt;/pin&gt; selected and be free to create a new connection to another input using 1 more &lt;click/&gt;&lt;lmb/&gt; without reselecting the output. Right click &lt;click/&gt;&lt;rmb/&gt; in blank space to get rid of the link you are creating..&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;If you start to make a link by accident, right click &lt;click/&gt;&lt;rmb/&gt; in a blank area to clear.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;A common error is to &apos;miss&apos; when trying to make a connection (this is either through being inaccurate with the mouse, or by selecting the wrong pin to connect to). This means that no link has been made, but you still likely have the link attached to your mouse. Be careful of this, make sure the link is created properly and still exists after you move the mouse away! Otherwise try again.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;To &apos;smarten up&apos; your links follow these steps:&cr;&lf;&lt;ol&gt;&cr;&lf;&lt;li&gt;&cr;&lf;Select them (either lasso a few of them at once by dragging out a selection box around them, or select them one by one with left mouse button).&cr;&lf;&lt;/li&gt;&cr;&lf;&lt;li&gt;&cr;&lf;Press &lt;key&gt;Ctrl&lt;/key&gt;+&lt;key&gt;Y&lt;/key&gt; until you get the style of your choice (Right angles, Curves, Direct)&cr;&lf;&lt;/li&gt;&cr;&lf;&lt;/ol&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   </PATCH>
