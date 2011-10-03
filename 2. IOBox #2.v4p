@@ -1,0 +1,575 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
+   <PATCH nodename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\2. IOBox #2.v4p" filename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\1. IOBox #2.v4p" locked="0" systemname="1. IOBox #2">
+   <BOUNDS height="14070" left="-8535" top="0" type="Window" width="8370">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="0" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="150" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="1095" left="225" top="150" type="Box" width="7665">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|2. IOBox #2|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="42">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="2" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="105" top="12705" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="750" left="105" top="12705" type="Box" width="5325">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Created by Elliot Woods.&cr;&lf;Distributed under the MIT license (check file LICENSE) for details.&cr;&lf;Generally you can do whatever you want with these files. have fun!|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="5" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5805" top="2640" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="540" left="5805" top="2640" type="Box" width="2085">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Author">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="6" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="1260" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="1155" left="225" top="1260" type="Box" width="7665">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Description">
+   </PIN>
+   </NODE>
+   <INFO author="Elliot Woods" description="Going further with IOBox&apos;s. Introducing the inspektor" tags="IOBox, Bang, Toggle, Spreads, String, Color">
+   </INFO>
+   <NODE componentmode="Hidden" filename="Subpatches\GetMetadata (VVVV).v4p" hiddenwhenlocked="1" id="10" nodename="GetMetadata (VVVV)" systemname="GetMetadata (VVVV)">
+   <BOUNDS height="100" left="5820" top="1800" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   <BOUNDS height="3465" left="14520" top="5520" type="Window" width="4680">
+   </BOUNDS>
+   <PIN pinname="Author" visible="1">
+   </PIN>
+   <PIN pinname="Description" visible="1">
+   </PIN>
+   <PIN pinname="Tags" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="8" nodename="PatchAlias (VVVV)" systemname="PatchAlias (VVVV)">
+   <BOUNDS height="100" left="5820" top="1350" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="10" dstpinname="Patch" hiddenwhenlocked="1" srcnodeid="8" srcpinname="Patch">
+   </LINK>
+   <LINK dstnodeid="6" dstpinname="Input String" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="10" srcpinname="Description">
+   <LINKPOINT x="6445" y="2205">
+   </LINKPOINT>
+   <LINKPOINT x="245" y="2355">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="InABox" id="11" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="2640" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="540" left="225" top="2640" type="Box" width="5520">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Tags">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="11" dstpinname="Input String" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="10" srcpinname="Tags">
+   <LINKPOINT x="7015" y="2293">
+   </LINKPOINT>
+   <LINKPOINT x="275" y="2448">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="5" dstpinname="Input String" hiddenwhenlocked="1" srcnodeid="10" srcpinname="Author">
+   </LINK>
+   <NODE componentmode="InABox" id="12" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="1860" top="3885" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="315" left="1860" top="3885" type="Box" width="3495">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[0 - IOBox (Value Advanced) I]&cr;&lf;The &lt;node&gt;IOBox (Value Advanced)&lt;/node&gt; supports many different ways of dealing with values.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Try interacting with these IOBox&apos;s. Remember to interact you use the &lt;click/&gt;&lt;rmb/&gt;right mouse button.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="13">
+   <BOUNDS type="Node" left="600" top="4725" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="600" top="4725" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="14">
+   <BOUNDS type="Node" left="600" top="5835" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="600" top="5835" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="15">
+   <BOUNDS type="Node" left="3915" top="4710" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3915" top="4710" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
+   <BOUNDS type="Node" left="3900" top="5820" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3900" top="5820" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="17">
+   <BOUNDS type="Node" left="2115" top="4710" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2115" top="4710" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="18">
+   <BOUNDS type="Node" left="2115" top="5835" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2115" top="5835" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="19" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="600" top="4440" width="510" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="600" top="4440" width="510" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="value" encoded="0">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="20" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3915" top="4425" width="495" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3915" top="4425" width="495" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="bang" encoded="0">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="21" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2100" top="4440" width="600" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2100" top="4440" width="600" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="toggle" encoded="0">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="22">
+   <BOUNDS type="Node" left="5370" top="4695" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5370" top="4695" width="795" height="960">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" values="0,0,0,1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|" encoded="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="23">
+   <BOUNDS type="Node" left="5370" top="5835" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5370" top="5835" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="24" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5400" top="4440" width="600" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5400" top="4440" width="600" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" encoded="0" values="vector">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="25" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="3735" top="6300" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="375" left="3735" top="6300" type="Box" width="1245">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[2 - Bang]&cr;&lf;A &lt;concept&gt;Bang&lt;/concept&gt; is another very simple message that can be sent around the patch. It generally tells something downstream to &apos;do something&apos;, like &apos;reset&apos; or &apos;start&apos;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;The message only exists for an instance, then disappears. It&apos;s like poking someone on the shoulder. A bang is &apos;instantaneous&apos;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;If you&apos;re familiar with bangs from Max/MSP, then you&apos;re likely &lt;b&gt;NOT&lt;/b&gt; going to be very familiar with bangs in VVVV. Watch out! They work very differently!&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;A bang is also represented by a Value. The substance of that Value is either 0 or 1 for a bang. The Value is 1 to denote a bang being sent. A bang lasts for 1 frame, after which the value returns back down to 0.&cr;&lf;&lt;br /&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="26" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="2100" top="6315" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="375" left="2100" top="6315" type="Box" width="1410">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[1 - Toggle]&cr;&lf;A &lt;concept&gt;Toggle&lt;/concept&gt; is a very simple message that can be sent around the patch. It generally switches something downstream like &apos;enable this&apos;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;A toggle is simply a Value of either 0 or 1.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf; 0 denotes low or &apos;off&apos;, 1 denotes high or &apos;on&apos;.&cr;&lf;&lt;br /&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Stopwatch (Animation)" nodename="Stopwatch (Animation)" componentmode="Hidden" id="27">
+   <BOUNDS type="Node" left="2610" top="8700" width="1485" height="270">
+   </BOUNDS>
+   <PIN pinname="Run" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="29">
+   <BOUNDS type="Node" left="2625" top="7830" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2625" top="7830" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Run" encoded="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Run">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="30">
+   <BOUNDS type="Node" left="4035" top="7830" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4035" top="7830" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Reset" encoded="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="30" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Reset">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="31">
+   <BOUNDS type="Node" left="2610" top="9540" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2610" top="9540" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output" encoded="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="31" dstpinname="Y Input Value">
+   </LINK>
+   <NODE componentmode="InABox" id="32" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="1605" top="7470" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="345" left="1605" top="7470" type="Box" width="3660">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[3 - Bangs and Toggles example]&cr;&lf;Let&apos;s try out &lt;concept&gt;Bang&lt;/concept&gt;s and &lt;concept&gt;Toggle&lt;/concept&gt;s!&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Let&apos;s create:&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;1 IOBox Toggle + 1 IOBox Bang*&lt;/li&gt;&cr;&lf;&lt;li&gt;1 &lt;node&gt;Stopwatch (Animation)&lt;/node&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;1 IOBox value &lt;/li&gt;&cr;&lf;&lt;/ul&gt;&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;* To create a toggle IOBox, double right click &lt;click2/&gt;&lt;rmb/&gt; and select &apos;Toggle&apos; from the menu. Do the same for bang, but this time select &apos;Bang&apos;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Now connect everything up as shown in the diagram.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;We can also give names to IOBox&apos;s very easily. Since they are now connected to the Stopwatch node&apos;s &lt;pin&gt;Run&lt;/pin&gt;, &lt;pin&gt;Reset&lt;/pin&gt; and &lt;pin&gt;Output&lt;/pin&gt; pins respectively, we can copy these names into the IOBox&apos;s. To do this, we middle click &lt;click/&gt;&lt;mmb/&gt; on the 3 IOBox&apos;s one by one.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Now try to interact with the &apos;Run&apos; and &apos;Reset&apos; boxes that you have created using right click &lt;click/&gt;&lt;rmb/&gt;.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="34">
+   <BOUNDS type="Node" left="330" top="10845" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="330" top="10845" width="2250" height="480">
+   </BOUNDS>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="35">
+   <BOUNDS type="Node" left="2835" top="10845" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2835" top="10845" width="2355" height="450">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="text" encoded="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Enumerations)" nodename="IOBox (Enumerations)" componentmode="InABox" id="36">
+   <BOUNDS type="Node" left="6375" top="10860" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6375" top="10860" width="1200" height="240">
+   </BOUNDS>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="39" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="6375" top="10425" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="330" left="6375" top="10425" type="Box" width="1245">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[6 - Enum]&cr;&lf;An &lt;concept&gt;Enum&lt;/concept&gt; is a perculiar datatype in VVVV. It is in general the only data type to learn something from downstream. Almost all other types only send data downstream, and do not feed back any data upstream (this is quite fundamental to how VVVV works).&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;An enum is an enumeration of options. The node which an enum is connected to will tell it which options are available. An example of a node with an enum input is &lt;node&gt;Blend (EX9.Renderstate)&lt;/node&gt;.&cr;&lf;&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Blend (EX9.RenderState)" nodename="Blend (EX9.RenderState)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="5880" top="11400" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Draw Mode" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="36" srcpinname="Output Enum" dstnodeid="37" dstpinname="Draw Mode">
+   </LINK>
+   <NODE componentmode="InABox" id="40" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="2835" top="10425" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="330" left="2835" top="10425" type="Box" width="1245">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[5 - String]&cr;&lf;A &lt;concept&gt;String&lt;/concept&gt; is another datatype within VVVV. It allows you to deal with text.&cr;&lf;&lt;br /&gt;&cr;&lf;VVVV works with UTF-8 encoded strings (international text) as well as ANSI strings (simple latin english text) + multi-line text.&cr;&lf;&lt;br /&gt;&cr;&lf;Strings can also be used for dealing with URLs, Filenames, Directory names and other text-based assets. In these cases VVVV has some helpful ways of dealing with strings to make life more lovely.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="41" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="330" top="10425" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="330" left="330" top="10425" type="Box" width="1245">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[4 - Color]&cr;&lf;A &lt;concept&gt;Color&lt;/concept&gt; is a datatype within VVVV. It allows you to deal with colour values.&cr;&lf;&lt;br /&gt;&cr;&lf;Colours have obvious graphical uses such as determining the colour of objects that you want to render.&cr;&lf;&lt;br /&gt;&cr;&lf;There are many nodes that allow you deal with colours directly, or convert them to other data types.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="RGB (Color Split)" nodename="RGB (Color Split)" componentmode="Hidden" id="42">
+   <BOUNDS type="Node" left="330" top="11505" width="2220" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Red" visible="1">
+   </PIN>
+   <PIN pinname="Green" visible="1">
+   </PIN>
+   <PIN pinname="Blue" visible="1">
+   </PIN>
+   <PIN pinname="Alpha" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Color Output" dstnodeid="42" dstpinname="Input">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="43">
+   <BOUNDS type="Node" left="330" top="11925" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="330" top="11925" width="495" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Red" encoded="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="42" srcpinname="Red" dstnodeid="43" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="44">
+   <BOUNDS type="Node" left="1050" top="11925" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1050" top="11925" width="495" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Green">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="45">
+   <BOUNDS type="Node" left="1770" top="11925" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1770" top="11925" width="495" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Blue">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="46">
+   <BOUNDS type="Node" left="2490" top="11925" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2490" top="11925" width="495" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Alpha">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="42" srcpinname="Green" dstnodeid="44" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Blue" dstnodeid="45" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Alpha" dstnodeid="46" dstpinname="Y Input Value">
+   </LINK>
+   </PATCH>
