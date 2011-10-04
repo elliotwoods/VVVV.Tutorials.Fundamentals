@@ -129,7 +129,7 @@
    </BOUNDS>
    <BOUNDS height="330" left="3375" top="3660" type="Box" width="1470">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[0 - Spreads]&cr;&lf;&lt;concept&gt;Spreads&lt;/concept&gt; are a fundamental tool in VVVV. A spread is a set of data. An individual item within that set is called a &lt;concept&gt;Slice&lt;/concept&gt;, the number of slices is called the &lt;concept&gt;Spread Count&lt;/concept&gt; or the &lt;concept&gt;Slice Count&lt;/concept&gt;. Each slice has a position within the spread called a &lt;concept&gt;Slice Index&lt;/concept&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;If you try to access a slice index outside of the range (e.g. &gt;= spread count or &lt;0) then the spread &apos;loops&apos;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;(Note for programmers: It&apos;s similar to an &lt;b&gt;Array&lt;/b&gt; in normal programming speak, but also very different).&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;&lt;b&gt;An example&lt;/b&gt;&lt;br /&gt;&cr;&lf;&cr;&lf;A fish and chip shop menu has 10 items, each with a price and a description. The first item on the list is &quot;Battered cod&quot; with a price of 2pounds 50pence. The last item on the list is &quot;Kimchi&quot; at 4 pounds. Therefore we could say the following:&cr;&lf;&lt;br /&gt;&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;There are a spread of Values (price) and a spread of Strings (description)&lt;/li&gt;&cr;&lf;&lt;li&gt;Both spreads have slice count of 10.&lt;/li&gt;&cr;&lf;&lt;li&gt;At slice index 0 in the Value spread we have &lt;b&gt;2.5&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;At slice index 0 in the spread of Strings we have &lt;b&gt;Battered cod&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;At slice index 9 in the spread of Strings we have &lt;b&gt;Kimchi&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;At slice index 10 in the spread of Strings we have &lt;b&gt;Battered cod&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;At slice index -1 in the spread of Strings we have &lt;b&gt;Kimchi&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;/ul&gt;|">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[0 - Spreads]&cr;&lf;&lt;concept&gt;Spreads&lt;/concept&gt; are a fundamental tool in VVVV. They are the gift that keeps on giving! A spread is a set of data. An individual item within that set is called a &lt;concept&gt;Slice&lt;/concept&gt;, the number of slices is called the &lt;concept&gt;Spread Count&lt;/concept&gt; or the &lt;concept&gt;Slice Count&lt;/concept&gt;. Each slice has a position within the spread called a &lt;concept&gt;Slice Index&lt;/concept&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;If you try to access a slice index outside of the range (e.g. &gt;= spread count or &lt;0) then the spread &apos;loops&apos;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;(Note for programmers: It&apos;s similar to an &lt;b&gt;Array&lt;/b&gt; in normal programming speak, but also very different).&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;&lt;b&gt;An example&lt;/b&gt;&lt;br /&gt;&cr;&lf;&cr;&lf;A fish and chip shop menu has 10 items, each with a price and a description. The first item on the list is &quot;Battered cod&quot; with a price of 2pounds 50pence. The last item on the list is &quot;Kimchi&quot; at 4 pounds. Therefore we could say the following:&cr;&lf;&lt;br /&gt;&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;There are a spread of Values (price) and a spread of Strings (description)&lt;/li&gt;&cr;&lf;&lt;li&gt;Both spreads have slice count of 10.&lt;/li&gt;&cr;&lf;&lt;li&gt;At slice index 0 in the Value spread we have &lt;b&gt;2.5&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;At slice index 0 in the spread of Strings we have &lt;b&gt;Battered cod&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;At slice index 9 in the spread of Strings we have &lt;b&gt;Kimchi&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;At slice index 10 in the spread of Strings we have &lt;b&gt;Battered cod&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;At slice index -1 in the spread of Strings we have &lt;b&gt;Kimchi&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;/ul&gt;|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -243,7 +243,7 @@
    </BOUNDS>
    <BOUNDS height="330" left="3330" top="4575" type="Box" width="1470">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[0 - GetSlice]&cr;&lf;A &lt;node&gt;GetSlice (Spreads)&lt;/node&gt; node picks 1 or more slices out of a spread.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Let&apos;s create a &lt;node&gt;GetSlice (Spreads)&lt;/node&gt; now, and attach a &lt;b&gt;4D Vector&lt;/b&gt; &lt;node&gt;IOBox&lt;/node&gt; to its &lt;pin&gt;Input&lt;/pin&gt; and a simple &lt;node&gt;IOBox&lt;/node&gt; to its &lt;pin&gt;Output&lt;/pin&gt;.|">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[1 - GetSlice]&cr;&lf;A &lt;node&gt;GetSlice (Spreads)&lt;/node&gt; node picks 1 or more slices out of a spread.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Let&apos;s create a &lt;node&gt;GetSlice (Spreads)&lt;/node&gt; now, and attach a &lt;b&gt;4D Vector&lt;/b&gt; &lt;node&gt;IOBox&lt;/node&gt; to its &lt;pin&gt;Input&lt;/pin&gt; and a simple &lt;node&gt;IOBox&lt;/node&gt; to its &lt;pin&gt;Output&lt;/pin&gt;. &lt;click/&gt;&lt;mmb/&gt; on the bottom IOBox to give it a name.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;For readability. Let&apos;s go into the &lt;node&gt;Inspektor&lt;/node&gt; and change some properties for both &lt;node&gt;IOBox&lt;/node&gt;. Set &lt;pin&gt;Value Type&lt;/pin&gt; to &lt;b&gt;Integer&lt;/b&gt; and &lt;pin&gt;Size&lt;/pin&gt; to &lt;b&gt;14&lt;/b&gt;. Also turn on &lt;pin&gt;Show Grid&lt;/pin&gt; and &lt;pin&gt;Show SliceIndex&lt;/pin&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Also let&apos;s add an &lt;node&gt;IOBox&lt;/node&gt; on the &lt;pin&gt;Index&lt;/pin&gt; input of &lt;node&gt;GetSlice&lt;/node&gt; using our middle button trick &lt;click/&gt;&lt;mmb/&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Add a &lt;node&gt;I (Spreads)&lt;/node&gt; to the top and connect the output to the input of the 4D vector. Set the input pin &lt;pin&gt;To&lt;/pin&gt; on &lt;node&gt;I&lt;/node&gt; to &lt;b&gt;4&lt;/b&gt;. This node now outputs a spread of &lt;b&gt;0, 1, 2, 3&lt;/b&gt; i.e. values &lt;pin&gt;From&lt;/pin&gt; &lt;b&gt;0&lt;/b&gt; &lt;pin&gt;To&lt;/pin&gt; &lt;b&gt;4&lt;/b&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Now try changing the &lt;b&gt;Index&lt;/b&gt; to see which slice is selected by the &lt;node&gt;GetSlice&lt;/node&gt; node.|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -259,21 +259,23 @@
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="105">
-   <BOUNDS type="Node" left="3675" top="6495" width="100" height="100">
+   <BOUNDS type="Node" left="3570" top="7815" width="2475" height="270">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Index">
+   </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="106">
-   <BOUNDS type="Node" left="3675" top="5220" width="100" height="100">
+   <BOUNDS type="Node" left="3570" top="5490" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3675" top="5220" width="795" height="960">
+   <BOUNDS type="Box" left="3570" top="5490" width="1635" height="1920">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="0,0,0,1">
+   <PIN pinname="Y Input Value" visible="1">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="4">
    </PIN>
@@ -281,17 +283,63 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="14">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="106" srcpinname="Y Output Value" dstnodeid="105" dstpinname="Input">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="107">
-   <BOUNDS type="Node" left="3675" top="7170" width="100" height="100">
+   <BOUNDS type="Node" left="3570" top="8490" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3675" top="7170" width="795" height="240">
+   <BOUNDS type="Box" left="3570" top="8490" width="1620" height="555">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="14">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output" encoded="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="105" srcpinname="Output" dstnodeid="107" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="108" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="5985" top="7125" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5985" top="7125" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Index" encoded="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="108" srcpinname="Y Output Value" dstnodeid="105" dstpinname="Index">
+   </LINK>
+   <NODE systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden" id="109">
+   <BOUNDS type="Node" left="3555" top="5100" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname=".. To [" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="109" srcpinname="Output" dstnodeid="106" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
