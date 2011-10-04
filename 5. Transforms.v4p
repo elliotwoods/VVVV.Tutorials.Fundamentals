@@ -1,0 +1,407 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
+   <PATCH nodename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\5. Transforms.v4p" filename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\5. Transforms.v4p" locked="0" systemname="5. Transforms">
+   <BOUNDS height="14025" left="13455" top="600" type="Window" width="8370">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="0" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="150" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="1095" left="225" top="150" type="Box" width="7665">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|5. Transforms|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="42">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="2" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="105" top="12405" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="750" left="105" top="12405" type="Box" width="5325">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Created by Elliot Woods.&cr;&lf;Distributed under the MIT license (check file LICENSE) for details.&cr;&lf;Generally you can do whatever you want with these files. have fun!|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="5" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5805" top="2640" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="540" left="5805" top="2640" type="Box" width="2085">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Author">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="6" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="1260" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="1155" left="225" top="1260" type="Box" width="7665">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Description">
+   </PIN>
+   </NODE>
+   <INFO author="Elliot Woods" description="Introduction to Transforms (things that warp objects and space in graphics)." tags="Transform, Translate, Scale, Rotate, FileTexture">
+   </INFO>
+   <NODE componentmode="Hidden" filename="Subpatches\GetMetadata (VVVV).v4p" hiddenwhenlocked="1" id="10" nodename="GetMetadata (VVVV)" systemname="GetMetadata (VVVV)">
+   <BOUNDS height="100" left="5820" top="1800" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   <BOUNDS height="3465" left="14520" top="5520" type="Window" width="4680">
+   </BOUNDS>
+   <PIN pinname="Author" visible="1">
+   </PIN>
+   <PIN pinname="Description" visible="1">
+   </PIN>
+   <PIN pinname="Tags" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="8" nodename="PatchAlias (VVVV)" systemname="PatchAlias (VVVV)">
+   <BOUNDS height="100" left="5820" top="1350" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="10" dstpinname="Patch" hiddenwhenlocked="1" srcnodeid="8" srcpinname="Patch">
+   </LINK>
+   <LINK dstnodeid="6" dstpinname="Input String" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="10" srcpinname="Description">
+   <LINKPOINT x="6445" y="2205">
+   </LINKPOINT>
+   <LINKPOINT x="245" y="2355">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="InABox" id="11" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="2640" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="540" left="225" top="2640" type="Box" width="5520">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Tags">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="11" dstpinname="Input String" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="10" srcpinname="Tags">
+   <LINKPOINT x="7015" y="2293">
+   </LINKPOINT>
+   <LINKPOINT x="275" y="2448">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="5" dstpinname="Input String" hiddenwhenlocked="1" srcnodeid="10" srcpinname="Author">
+   </LINK>
+   <NODE componentmode="InABox" id="12" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="2790" top="3660" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="360" left="2790" top="3660" type="Box" width="2025">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[0 - Transforms]&cr;&lf;Let&apos;s setup a &lt;node&gt;Quad&lt;/node&gt; with a &lt;node&gt;Renderer&lt;/node&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Now let&apos;s add a &lt;node&gt;Transform 2d&lt;/node&gt; above the &lt;node&gt;Quad&lt;/node&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;If we try and manipulate the input pins on the &lt;node&gt;Transform&lt;/node&gt;, then we can see how we can move, scale and rotate the object in a simple way&cr;&lf;&lt;br /&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="80" nodename="Quad (DX9)" systemname="Quad (DX9)">
+   <BOUNDS height="100" left="2730" top="4620" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="81" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <BOUNDS height="100" left="2730" top="5010" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1800" left="2730" top="5010" type="Box" width="2400">
+   </BOUNDS>
+   <BOUNDS height="5010" left="17985" top="5955" type="Window" width="6240">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="81" dstpinname="Layers" srcnodeid="80" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="Hidden" id="82" nodename="Transform (Transform 2d)" systemname="Transform (Transform 2d)">
+   <BOUNDS height="100" left="2895" top="4140" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="80" dstpinname="Transform" srcnodeid="82" srcpinname="Transform Out">
+   </LINK>
+   <NODE componentmode="InABox" id="84" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="2505" top="7140" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="330" left="2505" top="7140" type="Box" width="2625">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[1 - Vector transforms]&cr;&lf;The &lt;node&gt;Transform (2d)&lt;/node&gt; is good to get started and for a range of tasks, but let&apos;s also have a look at a different way of dealing with transforms which can be more elegant.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Select your &lt;node&gt;Renderer&lt;/node&gt; and &lt;node&gt;Quad&lt;/node&gt; by dragging &lt;hold/&gt;&lt;lmb/&gt; a selection box around the 2 nodes. Then duplicate these 2 nodes using &lt;key&gt;Ctrl&lt;/key&gt;+&lt;key&gt;D&lt;/key&gt; to duplicate. You should now have a copy of the &lt;node&gt;Quad&lt;/node&gt; and the &lt;node&gt;Renderer&lt;/node&gt;. Move these further down the patch.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Now lets add a &lt;node&gt;Scale (Transform Vector)&lt;/node&gt; and a &lt;node&gt;Translate (Transform Vector)&lt;/node&gt;. Connect the &lt;pin&gt;Transform Out&lt;/pin&gt; of &lt;node&gt;Translate&lt;/node&gt; into the &lt;pin&gt;Transform In&lt;/pin&gt; of &lt;node&gt;Scale&lt;/node&gt; and connect the &lt;pin&gt;Transform Out&lt;/pin&gt; of &lt;node&gt;Scale&lt;/node&gt; to the &lt;pin&gt;Transform&lt;/pin&gt; input of &lt;node&gt;Quad&lt;/node&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Now create 2 &lt;b&gt;Vector 3D&lt;/b&gt; &lt;node&gt;IOBox&lt;/node&gt;&apos;s using the double right click &lt;click2/&gt;&lt;rmb/&gt; quick menu.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Connect these 2 new &lt;node&gt;IOBox&lt;/node&gt;&apos;s to the &lt;node&gt;Scale&lt;/node&gt; and &lt;node&gt;Transform&lt;/node&gt; node&apos;s &lt;pin&gt;XYZ&lt;/pin&gt; inputs.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Since your scale&apos;s input value is set to &lt;b&gt;0,0,0&lt;/b&gt; your quad has no size. Increase this to &lt;b&gt;1,1,1&lt;/b&gt;. (Note: a quick way of doing this is to &lt;click/&gt;&lt;rmb/&gt; on the &lt;node&gt;IOBox&lt;/node&gt;&apos;s &lt;pin&gt;Input Value Y&lt;/pin&gt; and type &lt;key&gt;1&lt;/key&gt; then &lt;key&gt;Enter&lt;/key&gt;. This will set all slices in the spread to 1.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="86" nodename="Quad (DX9)" systemname="Quad (DX9)">
+   <BOUNDS height="100" left="2730" top="9825" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="85" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <BOUNDS height="100" left="2730" top="10215" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1800" left="2730" top="10215" type="Box" width="2400">
+   </BOUNDS>
+   <BOUNDS height="5010" left="17985" top="5955" type="Window" width="6240">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="87" nodename="Translate (Transform Vector)" systemname="Translate (Transform Vector)">
+   <BOUNDS height="270" left="2910" top="8985" type="Node" width="1980">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="89" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="4830" top="7635" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="720" left="4830" top="7635" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN encoded="0" pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="87" dstpinname="XYZ" srcnodeid="89" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="90" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="5925" top="7620" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="720" left="5925" top="7620" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values="1,1,1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN encoded="0" pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="88" nodename="Scale (Transform Vector)" systemname="Scale (Transform Vector)">
+   <BOUNDS height="270" left="2910" top="9405" type="Node" width="3075">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="86" dstpinname="Transform" srcnodeid="88" srcpinname="Transform Out">
+   </LINK>
+   <LINK dstnodeid="88" dstpinname="Transform In" srcnodeid="87" srcpinname="Transform Out">
+   </LINK>
+   <LINK dstnodeid="88" dstpinname="XYZ" srcnodeid="90" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="93" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="540" top="8490" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="330" left="540" top="8490" type="Box" width="1620">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[3 - Rotation]&cr;&lf;Now let&apos;s add another transform to the &lt;concept&gt;Transform stack&lt;/concept&gt;. Let&apos;s add a &lt;node&gt;Rotate&lt;/node&gt; at the top in the same way we added the &lt;node&gt;Translate&lt;/node&gt; and &lt;node&gt;Scale&lt;/node&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;The units of rotation in VVVV are :&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;0&lt;/b&gt; = no rotation&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;0.25&lt;/b&gt; = 90 degrees (quarter rotation)&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;0.5&lt;/b&gt; = 180 degrees (half rotation)&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;1&lt;/b&gt; = 360 degrees (full rotation), back to the beginning&lt;/li&gt;&cr;&lf;&cr;&lf;&lt;/ul&gt;&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;This normalisation of rotations may seem strange, but it becomes very useful for quickly doing maths with rotations and imagining them yourself.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;In VVVV, simple rotations are about 3 axes (corresponding the input &lt;pin&gt;XYZ&lt;/pin&gt; on &lt;node&gt;Rotate (Transform Vector)&lt;/node&gt;). These are:&cr;&lf;&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;X - Rotation about the positive X axis (the axis pointing right)&lt;/li&gt;&cr;&lf;&lt;li&gt;Y - Rotation about the positive Y axis (the axis pointing up)&lt;/li&gt;&cr;&lf;&lt;li&gt;Z - Rotation about the positive Z axis (the axis pointing out of the screen towards you)&lt;/li&gt;&cr;&lf;&lt;/ul&gt;&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;For standard 2D rotations, you&apos;ll want to spin the object in the axis pointing out of the screen.&cr;&lf;&lt;br /&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" hiddenwhenlocked="0" id="92" managers="" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <PIN pinname="Y Input Value" pintype="Input" slicecount="3" visible="1" values="0,0,-0.09">
+   </PIN>
+   <BOUNDS height="100" left="3870" top="7635" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="720" left="3870" top="7635" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Vector Size" pintype="Configuration" slicecount="1" values="3">
+   </PIN>
+   <PIN encoded="0" pinname="Default" pintype="Configuration" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   <BOUNDS height="0" left="0" top="0" type="Window" width="0">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Show Grid" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Value Type" pintype="Configuration" slicecount="1" values="Real">
+   </PIN>
+   <PIN pinname="Precision" pintype="Configuration" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Behavior" pintype="Configuration" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Minimum" pintype="Configuration" slicecount="1" values="-1000">
+   </PIN>
+   <PIN pinname="Maximum" pintype="Configuration" slicecount="1" values="1000">
+   </PIN>
+   <PIN encoded="0" pinname="Units" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Show Value" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Slider" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Slider Behavior" pintype="Configuration" slicecount="1" values="Endless">
+   </PIN>
+   <PIN pinname="Show Connections" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Background" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Sticky Slider" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Allow MouseOffset" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Constraints" pintype="Configuration" slicecount="1" values="scX">
+   </PIN>
+   <PIN pinname="Slider Alignment" pintype="Configuration" slicecount="1" values="Grid">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" slicecount="1" visible="-1" values="0">
+   </PIN>
+   <PIN pinname="X Input Value" pintype="Input" slicecount="1" visible="-1" values="0">
+   </PIN>
+   <PIN pinname="X Output Value" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" hiddenwhenlocked="0" id="91" managers="" nodename="Rotate (Transform Vector)" systemname="Rotate (Transform Vector)">
+   <PIN pinname="XYZ" pintype="Input" visible="1">
+   </PIN>
+   <BOUNDS height="270" left="2910" top="8550" type="Node" width="1005">
+   </BOUNDS>
+   <PIN pinname="Transform Out" pintype="Output" visible="1">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform In" pintype="Input" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="91" dstpinname="XYZ" srcnodeid="92" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="87" dstpinname="Transform In" srcnodeid="91" srcpinname="Transform Out">
+   </LINK>
+   <NODE componentmode="InABox" id="95" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="30" top="9315" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="360" left="30" top="9315" type="Box" width="2565">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[4 - Transform order]&cr;&lf;In computer graphics. The order in which transforms are performed is important, e.g.:&cr;&lf;&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;Rotate then translate&lt;/b&gt; - Spin the object around the origin (the center of the object), then move it&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;Translate then rotate&lt;/b&gt; - Move the object (hence move the center of the object), then spin the object around the origin (This causes the object to orbit around the center of the space).&lt;/li&gt;&cr;&lf;&lt;/ul&gt;&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Try to put the transforms in different orders to understand how this works. More on this later.&cr;&lf;&lt;/ul&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="86" srcpinname="Layer" dstnodeid="85" dstpinname="Layers">
+   </LINK>
+   </PATCH>

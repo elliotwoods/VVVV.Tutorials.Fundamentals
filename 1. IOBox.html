@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<html>
+<head>
+<title>Annotations</title>
+<script>
+		document.createElement('node');
+		document.createElement('pin');
+		document.createElement('key');
+		document.createElement('concept');
+	
+		document.createElement('lmb');
+		document.createElement('rmb');
+		document.createElement('mmb');
+		document.createElement('scroll');
+		
+		document.createElement('click');
+		document.createElement('click2');
+		document.createElement('hold');
+		document.createElement('release');
+	</script>
+<link rel="stylesheet" type="text/css" href="MakeDocumentation/style.css" />
+</head>
+<body>
+<img src="./1. IOBox.png" />
+<h2>0 - IOBox</h2>
+<p>  The most basic input / output mechanism in VVVV is the <node>IOBox</node>.  </p><p>    There are different IOBoxes for different types of data (Value, String, Color, Enum, Node).  </p><p>    The most basic type of data is called a Value, which means a real number (note for programmers: this is currently represented by a double precision floating point value).  </p><p>    IOBoxes perform multiple roles:  <ol>  <li>Give opportunities for user input/output</li>  <li>Holds data when no input is connected</li>  <li>Perform access to inputs/outputs of subpatches (more on that later!)</li>  </ol>  </p>
+<h2>1 - Drag right mouse button</h2>
+<p>    Move your mouse cursor over the IOBox without pressing any buttons. Now hold down the right mouse button <hold/><rmb/>and drag up/down to change the value.  </p><p>    To move through values more slowly (more accuracy) hold down either <key>Ctrl</key> or <key>Shift</key> whilst dragging the right mouse button: e.g. <key>Ctrl</key>+<hold/><rmb/>. Hold down both to get even more accuracy <key>Ctrl</key>+<key>Shift</key>+<hold/><rmb/>.  </p><p>    To move through values more quickly hold down <key>Alt</key>+<key>Ctrl</key> or <key>Alt</key>+<key>Shift</key> whilst dragging the right mouse button. Hold <key>Alt</key>+<key>Ctrl</key>+<key>Shift</key> for maximum speed.  </p><p>    In VVVV, generally we use the right mouse button <rmb/> for interacting with Values and other datatypes. We use the left mouse button <lmb/> to change the patch itself.</p>
+<h2>2 - Double left click</h2>
+<p>    The alternative way of changing the value is to double click on the IOBox <click2/><lmb/> to change the value by entering it with the keyboard.</p>
+<h2>3 - Editing using input pin</h2>
+<p>    In general, we can edit the value of an input pin by right clicking on it <click/><rmb/>. We can also use right click drag <hold/><rmb/>.    An IOBox is a very special type of node where the contents can effect the input pin. No other node will affect its input pin.</p>
+<h2>4 - When connected</h2>
+<p>  When an <pin>input</pin> is connected, then you cannot edit that input.     Since altering the value of an IOBox would alter the value of an input, you cannot interact directly with the value of an IOBox when an input is attached.</p>
+<h2>5 - Spreaded IOBoxes</h2>
+<p>  An <node>IOBox</node> can carry more than one <concept>Value</concept>. VVVV has a special way of dealing with several values at the same time, this is called a <concept>Spread</concept>.  </p><p>    Here we have an <node>IOBox</node> which works with 4 values. This is sometimes called a '4D vector' <node>IOBox</node></p>
+<h2>6 - Shortcut to create IOBox</h2>
+<p>  Since you'll be making these all the time, VVVV kindly gives you a shortcut to create a new <node>IOBox</node>.  </p><p>    To do this double right click <click2/><rmb/> in an empty area of the patch. This will give you a simple <node>IOBox (Value advanced)</node>. </p><p>    A menu will also appear allowing you to create different types of <node> IOBox</node>.</p>
+</body>
+</html>

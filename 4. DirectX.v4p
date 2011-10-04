@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
    <PATCH nodename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\4. DirectX.v4p" filename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\4. DirectX.v4p" locked="0" systemname="4. DirectX">
-   <BOUNDS height="12555" left="14490" top="885" type="Window" width="8370">
+   <BOUNDS height="13740" left="15120" top="630" type="Window" width="8370">
    </BOUNDS>
    <NODE componentmode="InABox" id="0" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="270" left="225" top="150" type="Node" width="1380">
@@ -19,9 +19,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="2" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="105" top="11205" type="Node" width="2070">
+   <BOUNDS height="270" left="105" top="12405" type="Node" width="2070">
    </BOUNDS>
-   <BOUNDS height="750" left="105" top="11205" type="Box" width="5325">
+   <BOUNDS height="750" left="105" top="12405" type="Box" width="5325">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Created by Elliot Woods.&cr;&lf;Distributed under the MIT license (check file LICENSE) for details.&cr;&lf;Generally you can do whatever you want with these files. have fun!|">
    </PIN>
@@ -144,30 +144,158 @@
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="63">
-   <BOUNDS type="Node" left="2775" top="4815" width="100" height="100">
+   <NODE componentmode="InABox" id="63" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <BOUNDS height="100" left="2775" top="5865" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2775" top="4815" width="2400" height="1800">
+   <BOUNDS height="1800" left="2775" top="5865" type="Box" width="2400">
    </BOUNDS>
-   <BOUNDS type="Window" left="15675" top="6570" width="6240" height="5010">
+   <BOUNDS height="5010" left="15675" top="6570" type="Window" width="6240">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="64">
-   <BOUNDS type="Node" left="2775" top="4230" width="100" height="100">
+   <NODE componentmode="Hidden" id="64" nodename="Quad (DX9)" systemname="Quad (DX9)">
+   <BOUNDS height="100" left="2775" top="5280" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="63" dstpinname="Layers" srcnodeid="64" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="InABox" id="65" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5295" top="5955" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="345" left="5295" top="5955" type="Box" width="2370">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[1 - Window modes]&cr;&lf;With the &lt;node&gt;Renderer&lt;/node&gt; selected. Try the following key combinations:&cr;&lf;&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;&lt;key&gt;Alt&lt;/key&gt;+&lt;key&gt;3&lt;/key&gt;&lt;/b&gt; - Hidden&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;&lt;key&gt;Alt&lt;/key&gt;+&lt;key&gt;2&lt;/key&gt;&lt;/b&gt; - Inside the patch&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;&lt;key&gt;Alt&lt;/key&gt;+&lt;key&gt;1&lt;/key&gt;&lt;/b&gt; - In a seperate window&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;&lt;key&gt;Alt&lt;/key&gt;+&lt;key&gt;Enter&lt;/key&gt;&lt;/b&gt; - Fullscreen&lt;/li&gt;&cr;&lf;&lt;/ul&gt;&cr;&lf;&lt;br /&gt;&cr;&lf;You can now press &lt;key&gt;Alt&lt;/key&gt;+&lt;key&gt;Enter&lt;/key&gt; again to exit fullscreen.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="67" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="315" top="4440" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="345" left="315" top="4440" type="Box" width="2370">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[2 - Blend mode]&cr;&lf;Let&apos;s create a new node above &lt;node&gt;Quad&lt;/node&gt; called &lt;node&gt;Fill (EX9.RenderState)&lt;/node&gt;&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Connect it&apos;s output to &lt;node&gt;Quad&lt;/node&gt;&apos;s &lt;pin&gt;Render State&lt;/pin&gt; input.&lt;br /&gt;&cr;&lf;&cr;&lf;Now create an enum IOBox above Fill. This time we&apos;ll use another shortcut. First &lt;click/&gt;&lt;lmb/&gt; on the top right pin &lt;pin&gt;Fill Mode&lt;/pin&gt; to start creating a link. Then move your mouse away and do a &lt;click/&gt;&lt;mmb/&gt; to create a new matching IOBox.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Try selecting different fill modes in the IOBox (remember to use &lt;click/&gt;&lt;rmb/&gt;).|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="68" nodename="Fill (EX9.RenderState)" systemname="Fill (EX9.RenderState)">
+   <BOUNDS height="270" left="2790" top="4860" type="Node" width="1590">
+   </BOUNDS>
+   <PIN pinname="Render State Out" visible="1">
+   </PIN>
+   <PIN pinname="Fill Mode">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="64" dstpinname="Render State" srcnodeid="68" srcpinname="Render State Out">
+   </LINK>
+   <NODE componentmode="InABox" id="71" nodename="IOBox (Enumerations)" systemname="IOBox (Enumerations)">
+   <BOUNDS height="0" left="4335" top="4275" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="240" left="4335" top="4275" type="Box" width="1590">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="Solid">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|Fill Mode|">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="68" dstpinname="Fill Mode" srcnodeid="71" srcpinname="Output Enum">
+   </LINK>
+   <NODE componentmode="InABox" id="72" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <BOUNDS height="100" left="2850" top="10260" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1800" left="2850" top="10260" type="Box" width="2400">
+   </BOUNDS>
+   <BOUNDS height="5010" left="18510" top="10425" type="Window" width="6240">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="73" nodename="Group (EX9)" systemname="Group (EX9)">
+   <BOUNDS height="270" left="2850" top="9795" type="Node" width="2835">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="72" dstpinname="Layers" srcnodeid="73" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="Hidden" filename="%VVVV%\plugins\DrawText.dll" id="75" nodename="Text (EX9)" systemname="Text (EX9)">
+   <BOUNDS height="100" left="4245" top="9345" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="64" srcpinname="Layer" dstnodeid="63" dstpinname="Layers">
+   <LINK dstnodeid="73" dstpinname="Layer 2" srcnodeid="75" srcpinname="Layer">
    </LINK>
-   <NODE componentmode="InABox" id="65" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="5295" top="4905" type="Node" width="2070">
+   <NODE componentmode="Hidden" id="76" nodename="Quad (DX9)" systemname="Quad (DX9)">
+   <BOUNDS height="100" left="2850" top="9345" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="345" left="5295" top="4905" type="Box" width="2370">
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="73" dstpinname="Layer 1" srcnodeid="76" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="Hidden" id="77" nodename="HSL (Color Join)" systemname="HSL (Color Join)">
+   <BOUNDS height="100" left="3810" top="8880" type="Node" width="100">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[1 - Window modes]&cr;&lf;With the &lt;node&gt;Renderer&lt;/node&gt; selected. Try the following key combinations:&cr;&lf;&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;&lt;key&gt;Alt&lt;/key&gt;+&lt;key&gt;3&lt;/key&gt;&lt;/b&gt; - Hidden&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;&lt;key&gt;Alt&lt;/key&gt;+&lt;key&gt;2&lt;/key&gt;&lt;/b&gt; - Inside the patch&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;&lt;key&gt;Alt&lt;/key&gt;+&lt;key&gt;1&lt;/key&gt;&lt;/b&gt; - In a seperate window&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;&lt;key&gt;Alt&lt;/key&gt;+&lt;key&gt;Enter&lt;/key&gt;&lt;/b&gt; - Fullscreen&lt;/li&gt;&cr;&lf;&lt;/ul&gt;&cr;&lf;&lt;br /&gt;&cr;&lf;You can now press &lt;key&gt;Alt&lt;/key&gt;+&lt;key&gt;Enter&lt;/key&gt; again to exit fullscreen.|">
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Lightness" slicecount="1" values="0.2">
+   </PIN>
+   <PIN pinname="Hue" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="76" dstpinname="Color" srcnodeid="77" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="Hidden" id="78" nodename="Scale (Transform)" systemname="Scale (Transform)">
+   <BOUNDS height="100" left="3015" top="8625" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="X" slicecount="1" values="1.83">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="76" dstpinname="Transform" srcnodeid="78" srcpinname="Transform Out">
+   </LINK>
+   <NODE componentmode="InABox" id="79" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="3120" top="8175" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="330" left="3120" top="8175" type="Box" width="1260">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[3 - Group]&cr;&lf;The &lt;node&gt;Renderer&lt;/node&gt; node has only 1 &lt;pin&gt;Layers&lt;/pin&gt; input, and in VVVV, each &lt;pin&gt;input&lt;/pin&gt; can only only accept 1 Link. So how do we connect multiple objects to 1 Renderer?&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;For this, we use the &lt;node&gt;Group (EX9)&lt;/node&gt;. Let&apos;s create some nodes, from the top let&apos;s create:&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;A &lt;node&gt;Quad&lt;/node&gt; and a &lt;node&gt;Text (EX9)&lt;/node&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;A &lt;node&gt;Group (EX9)&lt;/node&gt; node&lt;/li&gt;&cr;&lf;&lt;li&gt;A &lt;node&gt;Renderer (EX9)&lt;/node&gt;&lt;/li&gt;&cr;&lf;&lt;/ul&gt;&cr;&lf;&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;First connect the &lt;node&gt;Group&lt;/node&gt; to the &lt;node&gt;Renderer&lt;/node&gt;, then connect the &lt;node&gt;Text&lt;/node&gt; to the &lt;node&gt;Group&lt;/node&gt;&apos;s &lt;pin&gt;Layer 2&lt;/pin&gt; input pin. Now you should be rendering the text &quot;vvvv&quot;. You can change this text using the 3rd input pin &lt;pin&gt;Text&lt;/pin&gt; on the &lt;node&gt;Text&lt;/node&gt; node.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Now connect the &lt;node&gt;Quad&lt;/node&gt; to the &lt;pin&gt;Layer 1&lt;/pin&gt; input of &lt;node&gt;Group&lt;/node&gt;. Both objects should now be drawing.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Since they are both the same colour, it is a little confusing to see. So let&apos;s change the colour of the Quad:&cr;&lf;&cr;&lf;&lt;ol&gt;&cr;&lf;&lt;li&gt;Create a new node at the top called &lt;node&gt;HSL (Color Join)&lt;/node&gt;. &lt;/li&gt;&cr;&lf;&lt;li&gt;Attach the &lt;pin&gt;Output&lt;/pin&gt; of &lt;node&gt;HSL&lt;/node&gt; to the &lt;pin&gt;Color&lt;/pin&gt; input of &lt;node&gt;Quad&lt;/node&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;Change the &lt;pin&gt;Lightness&lt;/pin&gt; pin of &lt;node&gt;HSL&lt;/node&gt; to around &lt;b&gt;0.2&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;Change the &lt;pin&gt;Hue&lt;/pin&gt; to &lt;b&gt;0&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;/ol&gt;&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;You should now have some white text drawn on top of a red quad.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;The order in which inputs are made to the &lt;node&gt;Group&lt;/node&gt; node depicts what order the objects are drawn to the screen, i.e. since the &lt;node&gt;Quad&lt;/node&gt; is connected to &lt;pin&gt;Layer 1&lt;/pin&gt;, we draw this object first, and then the &lt;node&gt;Text&lt;/node&gt; which is connected to &lt;pin&gt;Layer 2&lt;/pin&gt;. This means that the Text is drawn on top of the Quad, since it is drawn second, and because there is no other depth queues in the scene.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;To change the size of the quad to fit the text, let&apos;s make a new node above &lt;node&gt;Quad&lt;/node&gt; called &lt;node&gt;Scale (Transform)&lt;/node&gt;. Connect the &lt;pin&gt;Transform Out&lt;/pin&gt; of &lt;node&gt;Scale&lt;/node&gt; to the &lt;pin&gt;Transform&lt;/pin&gt; input of &lt;node&gt;Quad&lt;/node&gt;. Now try editing the &lt;pin&gt;x&lt;/pin&gt;, &lt;pin&gt;y&lt;/pin&gt; and &lt;pin&gt;z&lt;/pin&gt; inputs of &lt;node&gt;Scale&lt;/node&gt;|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
