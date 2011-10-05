@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<html>
+<head>
+<title>Annotations</title>
+<script>
+		document.createElement('node');
+		document.createElement('pin');
+		document.createElement('key');
+		document.createElement('concept');
+	
+		document.createElement('lmb');
+		document.createElement('rmb');
+		document.createElement('mmb');
+		document.createElement('scroll');
+		
+		document.createElement('click');
+		document.createElement('click2');
+		document.createElement('hold');
+		document.createElement('release');
+	</script>
+<link rel="stylesheet" type="text/css" href="html_resources/style.css" />
+</head>
+<body>
+<img src="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\7. Animation.png" />
+<h2>0 - Introduction to animation</h2>
+<p>  There are an infinite number of ways to animate things in VVVV. Here are some obvious ones:  <ul>  <li>Damping between 2 states</li>  <li>Using <node>Timeliner</node></li>  <li>Using LFO</li>  </ul></p>
+<h2>1 - Damper</h2>
+<p>  A simple form of animation is 'damping' between 2 states. Examples of nodes which can cause this type of animation are:  <ul>  <li><node>Damper</node></li>  <li><node>Decay</node></li>  <li><node>DeNiro</node> (so called because it acts like a 'taxi driver')</li>  <li><node>Newton</node></li>  </ul>  </p><p>    These nodes tend to take an <pin>Input</pin> which changes, and give an <pin>Output</pin> which moves smoothly. The speed and type of this movement depends on the type of the node, and the parameters of that node.  </p><p>    Let's try the following:  <ol>  <li>Create a <node>Damper (Animation)</node>.</li>  <li>Create 2 <node>IOBox</node>'s around the <node>Damper</node>. One attached to its <pin>Input</pin> and one attached to its <pin>Output</pin></li>  <li>Create a <b>Toggle</b> <node>IOBox</node> using the <img src="html_resources/click2.png"/><img src="html_resources/rmb.png"/> shortcut menu, and attach its output to the input of the top <node>IOBox</node></li>  </ol>  </p><p>  Now try toggling the <node>IOBox</node> on and off. You will notice the <pin>Input</pin> jumps sharply between values, whilst the output moves smoothly.</p>
+<h2>2 - Decay</h2>
+<p>  Try this agan, but with a <node>Decay</node> node instead of a <node>Damper</node> node.  </p><p>    Set the <pin>Decay</pin> input pin of <node>Decay</node> to <b>1 second</b>. Now when you make the value high it jumps instantly. But when you make it low again it takes 1 second to return back to <b>0</b>.</p>
+<h2>3 - LFO driven animation</h2>
+<p>  Firstly let's grab the rendering patch we had from last time. Copy it <key>Ctrl</key>+<key>C</key> there , and paste it <key>Ctrl</key>+<key>V</key>here. Set the <pin>Spread Count</pin> to <b>3</b>.  </p><p>    To save some space. I've deleted the <b>Aspect Ratio</b> <node>IOBox</node> and connected the <node>/</node> directly to the <node>Scale</node>'s <pin>Y</pin> input. Also I've scaled down the size of the <node>Renderer</node> in my patch.  </p><p>    First let's manually 'roll' the <pin>Phase</pin> input of the <node>LinearSpread</node>. Just put your mouse over it <img src="html_resources/hold.png"/><img src="html_resources/rmb.png"/> hold the right mouse down and drag up/down.  </p><p>    Now create a new node <node>LFO (Animation)</node> and add 2 <node>IOBox</node>'s to the <pin>Output</pin> and <pin>Cycles</pin> output pins on it. Set the <pin>Period</pin> input on <node>LFO</node> to <b>3 seconds</b>. Notice how the <pin>Output</pin> and <pin>Cycles</pin> are affected.  </p><p>    Now connect the <pin>Output</pin> of <node>LFO</node> to the <pin>Phase</pin> input of <node>LinearSpread</node>. You should see the circles marching in a line.</p>
+<h2>3 - RandomSpread animations</h2>
+<p>  Now make a copy of that section of the patch, delete the <node>LFO</node> with its <node>IOBox</node>'s. The <pin>Phase</pin> of the <node>LinearSpread</node> will now keep the last value sent to it.  </p><p>    Create a <node>RandomSpread (Spreads)</node> node above <node>Translate</node>, and attach the <pin>Output</pin> of <node>RandomSpread</node> to the <pin>Y</pin> input of <node>Translate</node> and set the <pin>Spread Count</pin> to <b>3</b>.  </p><p>    RandomSpread is now outputting a Spread of 3 values, each of which should be random (if you want to get nerdy, pseudo-random).  </p><p>    If we roll the value of the <pin>Random Seed</pin> input pin of <node>RandomSpread</node>, we'll get a different set of random numbers.  </p><p>    Create a new <node>LFO</node> and connect the <node>Cycles</node> output to the <pin>Random Seed</pin> input. Now periodically the circles will jump to new positions.  </p><p>    Aha! We know how to make things move smoothly instead of jumping dont we? Let's stick a <node>Damper</node> in the path between <node>RandomSpread</node> and <node>Translate</node>. Now they should move smoothly!  </p><p>    To improve this, let's try a few things:  <ul>  <li>Change the <pin>Width</pin> of the <node>RandomSpread</node> to <b>2</b>. This means that the range of values output will be between <b>-1</b> and <b>+1</b> which is the range of Y values that fit inside the Renderer. The range is defined by the <pin>Width</pin> and the <pin>Input</pin> (i.e. the center) of <node>RandomSpread</node></li>  <li>Try increasing the <pin>Filter Time</pin> of <node>Damper</node> to make the circles accelerate more slowly.</li>  <li>Try changing the <pin>Period</pin> of the <node>LFO</node>. Note that if the <pin>Period</pin> is too short (i.e. quick), then the input to the <node>Damper</node> might move too quickly for the output to ever catch up.</li>  <li>Try increasing the <pin>Spread Count</pin> on <node>RandomSpread</node></li>  <li>Try chaning the <pin>Spread Count</pin> and <pin>Width</pin> of the <node>LinearSpread</node></li>  </ul></p>
+</body>
+</html>

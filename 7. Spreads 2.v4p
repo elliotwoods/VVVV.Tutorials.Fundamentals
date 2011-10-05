@@ -1,0 +1,509 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
+   <PATCH nodename="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\7. Spreads 2.v4p" filename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\6. Spreads.v4p" locked="0" systemname="6. Spreads">
+   <BOUNDS height="14025" left="5310" top="600" type="Window" width="16800">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="0" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="150" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="1095" left="225" top="150" type="Box" width="7665">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|6. Spreads 2|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="42">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="2" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="105" top="12405" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="750" left="105" top="12405" type="Box" width="5325">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Created by Elliot Woods.&cr;&lf;Distributed under the MIT license (check file LICENSE) for details.&cr;&lf;Generally you can do whatever you want with these files. have fun!|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="5" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5805" top="2640" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="540" left="5805" top="2640" type="Box" width="2085">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Author">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="6" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="1260" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="1155" left="225" top="1260" type="Box" width="7665">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Description">
+   </PIN>
+   </NODE>
+   <INFO author="Elliot Woods" description="" tags="">
+   </INFO>
+   <NODE componentmode="Hidden" filename="Subpatches\GetMetadata (VVVV).v4p" hiddenwhenlocked="1" id="10" nodename="GetMetadata (VVVV)" systemname="GetMetadata (VVVV)">
+   <BOUNDS height="100" left="5820" top="1800" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   <BOUNDS height="3465" left="14520" top="5520" type="Window" width="4680">
+   </BOUNDS>
+   <PIN pinname="Author" visible="1">
+   </PIN>
+   <PIN pinname="Description" visible="1">
+   </PIN>
+   <PIN pinname="Tags" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="8" nodename="PatchAlias (VVVV)" systemname="PatchAlias (VVVV)">
+   <BOUNDS height="100" left="5820" top="1350" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="10" dstpinname="Patch" hiddenwhenlocked="1" srcnodeid="8" srcpinname="Patch">
+   </LINK>
+   <LINK dstnodeid="6" dstpinname="Input String" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="10" srcpinname="Description">
+   <LINKPOINT x="6445" y="2205">
+   </LINKPOINT>
+   <LINKPOINT x="245" y="2355">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="InABox" id="11" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="2640" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="540" left="225" top="2640" type="Box" width="5520">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Tags">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="11" dstpinname="Input String" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="10" srcpinname="Tags">
+   <LINKPOINT x="7015" y="2293">
+   </LINKPOINT>
+   <LINKPOINT x="275" y="2448">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="5" dstpinname="Input String" hiddenwhenlocked="1" srcnodeid="10" srcpinname="Author">
+   </LINK>
+   <NODE componentmode="InABox" id="12" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="3375" top="3660" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="330" left="3375" top="3660" type="Box" width="1470">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[0 - Spreads]&cr;&lf;&lt;concept&gt;Spreads&lt;/concept&gt; are a fundamental tool in VVVV. They are the gift that keeps on giving (metephorically, and quite literally).&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;(Note for programmers: It&apos;s similar to an &lt;b&gt;Array&lt;/b&gt; in normal programming speak, but also very different).&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;A spread is a set of data.&lt;/li&gt;&cr;&lf;&lt;li&gt;An individual item within a Spread is called a &lt;concept&gt;Slice&lt;/concept&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;The number of Slices in a Spread is called the &lt;concept&gt;Spread Count&lt;/concept&gt; or the &lt;concept&gt;Slice Count&lt;/concept&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;Each Slice has a position within the Spread called a &lt;concept&gt;Slice Index&lt;/concept&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;The first Slice in the Spread has Slice Index of &lt;b&gt;0&lt;/b&gt;.&lt;/li&gt;&cr;&lf;&lt;li&gt;If you try to access a slice index outside of the range (e.g. &gt;= spread count or &lt;0) then the spread &apos;loops&apos;.&lt;/li&gt;&cr;&lf;&lt;li&gt;A Spread of Spread Count &lt;b&gt;0&lt;/b&gt; is a special case called an &lt;concept&gt;Empty Spread&lt;/concept&gt;&cr;&lf;&lt;/ul&gt;&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;&lt;b&gt;An example&lt;/b&gt;&lt;br /&gt;&cr;&lf;&cr;&lf;A fish and chip shop menu has 10 items, each with a price and a description. The first item on the list is &quot;Battered cod&quot; with a price of 2pounds 50pence. The last item on the list is &quot;Kimchi&quot; at 4 pounds. Therefore we could say the following:&cr;&lf;&lt;br /&gt;&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;There are a spread of Values (price) and a spread of Strings (description)&lt;/li&gt;&cr;&lf;&lt;li&gt;Both spreads have slice count of 10.&lt;/li&gt;&cr;&lf;&lt;li&gt;At slice index 0 in the Value spread we have &lt;b&gt;2.5&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;At slice index 0 in the spread of Strings we have &lt;b&gt;Battered cod&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;At slice index 9 in the spread of Strings we have &lt;b&gt;Kimchi&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;At slice index 10 in the spread of Strings we have &lt;b&gt;Battered cod&lt;/b&gt; (we&apos;ve looped here back to the beginning of the spread)&lt;/li&gt;&cr;&lf;&lt;li&gt;At slice index -1 in the spread of Strings we have &lt;b&gt;Kimchi&lt;/b&gt;&cr;&lf; (we&apos;ve looped here back to the end of the spread)&lt;/li&gt;&cr;&lf;&lt;/ul&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="103" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="8145" top="3465" type="Node" width="330">
+   </BOUNDS>
+   <BOUNDS height="7515" left="8145" top="3465" type="Box" width="345">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="||">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="104" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="675" top="4545" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="330" left="675" top="4545" type="Box" width="1470">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[1 - GetSlice]&cr;&lf;A &lt;node&gt;GetSlice (Spreads)&lt;/node&gt; node picks 1 or more slices out of a spread.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Let&apos;s create a &lt;node&gt;GetSlice (Spreads)&lt;/node&gt; now, and attach a &lt;b&gt;4D Vector&lt;/b&gt; &lt;node&gt;IOBox&lt;/node&gt; to its &lt;pin&gt;Input&lt;/pin&gt; and a simple &lt;node&gt;IOBox&lt;/node&gt; to its &lt;pin&gt;Output&lt;/pin&gt;. &lt;click/&gt;&lt;mmb/&gt; on the bottom IOBox to give it a name.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;For readability. Let&apos;s go into the &lt;node&gt;Inspektor&lt;/node&gt; and change some properties for both &lt;node&gt;IOBox&lt;/node&gt;&apos;s. Set &lt;pin&gt;Value Type&lt;/pin&gt; to &lt;b&gt;Integer&lt;/b&gt; and &lt;pin&gt;Size&lt;/pin&gt; to &lt;b&gt;14&lt;/b&gt;. Also turn on &lt;pin&gt;Show Grid&lt;/pin&gt; and &lt;pin&gt;Show SliceIndex&lt;/pin&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Also let&apos;s add an &lt;node&gt;IOBox&lt;/node&gt; on the &lt;pin&gt;Index&lt;/pin&gt; input of &lt;node&gt;GetSlice&lt;/node&gt; using our middle button trick &lt;click/&gt;&lt;mmb/&gt;. (first click &lt;click/&gt;&lt;lmb/&gt;on the pin to start a connection and then &lt;click/&gt;&lt;mmb/&gt; to make an &lt;node&gt;IOBox&lt;/node&gt; from the connection.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Add a &lt;node&gt;I (Spreads)&lt;/node&gt; to the top and connect the output to the input of the 4D vector. Set the input pin &lt;pin&gt;To&lt;/pin&gt; on &lt;node&gt;I&lt;/node&gt; to &lt;b&gt;4&lt;/b&gt;. This node now outputs a spread of &lt;b&gt;0, 1, 2, 3&lt;/b&gt; i.e. values &lt;pin&gt;From&lt;/pin&gt; &lt;b&gt;0&lt;/b&gt; &lt;pin&gt;To&lt;/pin&gt; &lt;b&gt;4&lt;/b&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Now try changing the &lt;b&gt;Index&lt;/b&gt; to see which slice is selected by the &lt;node&gt;GetSlice&lt;/node&gt; node.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="105" nodename="GetSlice (Spreads)" systemname="GetSlice (Spreads)">
+   <BOUNDS height="270" left="915" top="7785" type="Node" width="2475">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Index">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="106" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="915" top="5460" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1920" left="915" top="5460" type="Box" width="1635">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN encoded="0" pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="14">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="105" dstpinname="Input" srcnodeid="106" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="107" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="915" top="8460" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="555" left="915" top="8460" type="Box" width="1620">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="14">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="107" dstpinname="Y Input Value" srcnodeid="105" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="InABox" id="108" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="3330" top="7095" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="240" left="3330" top="7095" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Index">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="105" dstpinname="Index" srcnodeid="108" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="Hidden" id="109" nodename="I (Spreads)" systemname="I (Spreads)">
+   <BOUNDS height="100" left="900" top="5070" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname=".. To [" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="106" dstpinname="Y Input Value" srcnodeid="109" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="Hidden" id="110" nodename="GetSlice (Spreads)" systemname="GetSlice (Spreads)">
+   <BOUNDS height="270" left="5115" top="6450" type="Node" width="1605">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="111" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="5100" top="5760" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="240" left="5100" top="5760" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="100">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="110" dstpinname="Input" srcnodeid="111" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="112" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="5100" top="6960" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="240" left="5100" top="6960" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="112" dstpinname="Y Input Value" srcnodeid="110" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="InABox" id="113" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="6660" top="5760" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="240" left="6660" top="5760" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Index">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="10">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="110" dstpinname="Index" srcnodeid="113" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="114" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="4965" top="5145" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="345" left="4965" top="5145" type="Box" width="2595">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[2 - Always repeating]&cr;&lf;So we&apos;ve seen how the data in a spread is repeated to satisfy the slice which is being asked for. This is even the case when we have 1 value.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;We can test this with a &lt;node&gt;GetSlice&lt;/node&gt; with a simple &lt;node&gt;IOBox (Value)&lt;/node&gt; input.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;When we run it through a &lt;node&gt;GetSlice&lt;/node&gt; and roll the &lt;pin&gt;Index&lt;/pin&gt; pin different slices, we get the same value.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Important note: &lt;concept&gt;Every Value, String, Colour, Enum, etc in VVVV is stored as a Spread, and therefore repeats like a Spread.&lt;/concept&gt;&cr;&lf;&lt;br /&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="97" srcpinname="Actual Backbuffer Width" dstnodeid="102" dstpinname="Input">
+   </LINK>
+   <NODE id="97" componentmode="InABox" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <PIN pinname="Actual Backbuffer Width" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Height" visible="1">
+   </PIN>
+   <PIN pinname="Background Color" visible="1">
+   </PIN>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="100" left="8790" top="2355" width="100">
+   </BOUNDS>
+   <BOUNDS type="Box" height="3660" left="8790" top="2355" width="7695">
+   </BOUNDS>
+   <BOUNDS type="Window" height="5010" left="15765" top="6165" width="6240">
+   </BOUNDS>
+   </NODE>
+   <NODE id="102" componentmode="Hidden" nodename="Divide (Value)" systemname="Divide (Value)">
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="270" left="14505" top="6345" width="1035">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="97" srcpinname="Actual Backbuffer Height" dstnodeid="102" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="99" srcpinname="Transform Out" dstnodeid="101" dstpinname="Transform In">
+   </LINK>
+   <NODE id="99" componentmode="Hidden" nodename="UniformScale (Transform)" systemname="UniformScale (Transform)">
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="100" left="8955" top="885" width="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" slicecount="1" values="0.1">
+   </PIN>
+   </NODE>
+   <NODE id="101" componentmode="Hidden" nodename="Scale (Transform)" systemname="Scale (Transform)">
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="100" left="8955" top="1350" width="100">
+   </BOUNDS>
+   <PIN pinname="X" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100" srcpinname="Texture Out" dstnodeid="98" dstpinname="Texture" linkstyle="VHV">
+   <LINKPOINT x="10230" y="1718">
+   </LINKPOINT>
+   <LINKPOINT x="9195" y="1718">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="100" componentmode="Hidden" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="100" left="10230" top="1350" width="100">
+   </BOUNDS>
+   <PIN pinname="Filename" encoded="0" slicecount="1" values="|..\..\..\vvvv\vvvv_45beta26\girlpower\images\ring thin.bmp|">
+   </PIN>
+   </NODE>
+   <NODE id="98" componentmode="Hidden" nodename="Quad (DX9)" systemname="Quad (DX9)">
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="270" left="8790" top="1845" width="1245">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="101" srcpinname="Transform Out" dstnodeid="98" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="117" srcpinname="Transform Out" dstnodeid="99" dstpinname="Transform In">
+   </LINK>
+   <NODE id="117" componentmode="Hidden" nodename="Translate (Transform)" systemname="Translate (Transform)">
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="100" left="8955" top="480" width="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="118" srcpinname="Output" dstnodeid="117" dstpinname="X">
+   </LINK>
+   <NODE id="118" componentmode="Hidden" nodename="LinearSpread (Spreads)" systemname="LinearSpread (Spreads)">
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="100" left="9210" top="150" width="100">
+   </BOUNDS>
+   <PIN pinname="Spread Count" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="120" srcpinname="Output" dstnodeid="97" dstpinname="Background Color">
+   </LINK>
+   <NODE id="120" componentmode="Hidden" nodename="RetroColors (Color)" systemname="RetroColors (Color)">
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="100" left="10485" top="1935" width="100">
+   </BOUNDS>
+   <PIN pinname="Wavelength (nm)">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Mode" slicecount="1" values="SinclairZXSpectrum">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="121" srcpinname="Render State Out" dstnodeid="98" dstpinname="Render State" linkstyle="VHV">
+   <LINKPOINT x="8370" y="1718">
+   </LINKPOINT>
+   <LINKPOINT x="8790" y="1718">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="121" componentmode="Hidden" nodename="Blend (EX9.RenderState)" systemname="Blend (EX9.RenderState)">
+   <PIN pinname="Render State Out" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="100" left="8310" top="1350" width="100">
+   </BOUNDS>
+   <PIN pinname="Draw Mode" slicecount="1" values="Add">
+   </PIN>
+   </NODE>
+   <NODE id="119" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS type="Node" height="270" left="10590" top="510" width="2070">
+   </BOUNDS>
+   <BOUNDS type="Box" height="315" left="10590" top="510" width="4185">
+   </BOUNDS>
+   <PIN pinname="Input String" encoded="0" slicecount="1" visible="0" values="|[4 - Tidying the blend mode]&cr;&lf;If we have too many circles, they will start to overlap. Since the textures have an opaque black background, they will interfere with each other. We can see that the circles are opaque by changing the background colour of the &lt;node&gt;Renderer&lt;/node&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;To change the background colour of the &lt;node&gt;Renderer&lt;/node&gt;, create a &lt;node&gt;RetroColors (Color)&lt;/node&gt; and connect its &lt;pin&gt;Output&lt;/pin&gt; to  the &lt;pin&gt;Background Color&lt;/pin&gt; input pin on the &lt;node&gt;Renderer&lt;/node&gt;. Select different colours by changing the &lt;pin&gt;Index&lt;/pin&gt; input of &lt;node&gt;RetroColors&lt;/node&gt; and/or changing to a different games console colourset using the &lt;pin&gt;Mode&lt;/pin&gt; pin.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;On the right hand input of &lt;node&gt;Blend&lt;/node&gt; we see &lt;&cr;&lf;That was fun, but anyway, we can definitely see that the background of the quads are black. Let&apos;s change the &lt;concept&gt;Blend Mode&lt;/concept&gt; of the quads, (Photoshop users will be familiar with this idea).&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Create a &lt;node&gt;Blend (EX9.RenderState)&lt;/node&gt; above &lt;node&gt;Quad&lt;/node&gt; and attach the output of &lt;node&gt;Blend&lt;/node&gt; to the &lt;pin&gt;Render State&lt;/pin&gt; input of &lt;node&gt;Quad&lt;/node&gt;. Set the &lt;pin&gt;Draw Mode&lt;/pin&gt; of &lt;node&gt;Blend&lt;/node&gt; to &lt;b&gt;Add&lt;/b&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Now when the quads are drawn, their colour is &apos;added&apos; to whatever is  behind them, i.e. since black is &lt;b&gt;0&lt;/b&gt; and &lt;b&gt;a + 0 = a&lt;/b&gt;, black has no effect when the &lt;pin&gt;Draw Mode&lt;/pin&gt; is set to &lt;b&gt;Add&lt;/b&gt;.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Descriptive Name" encoded="0" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE id="115" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS type="Node" height="270" left="10590" top="165" width="2070">
+   </BOUNDS>
+   <BOUNDS type="Box" height="315" left="10590" top="165" width="4185">
+   </BOUNDS>
+   <PIN pinname="Input String" encoded="0" slicecount="1" visible="0" values="|[3 - A visual spread experiment]&cr;&lf;So let&apos;s try and visualise what happens with spreads.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;We&apos;re going to setup a simple graphical patch to use in a number of experiments. This patch will help us to visualise some spread mechanics, but also introduces a few graphical concepts as well.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Follow these steps:&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;&lt;ol&gt;&cr;&lf;&lt;li&gt;First create a &lt;node&gt;Quad&lt;/node&gt; and a &lt;node&gt;Renderer&lt;/node&gt; and connect them up. You should get the familiar white square in a black box.&lt;/li&gt;&cr;&lf;&lt;li&gt;Now lets make a new node called &lt;node&gt;FileTexture&lt;/node&gt; above &lt;node&gt;Quad&lt;/node&gt;. Connect the &lt;pin&gt;Texture Out&lt;/pin&gt; output of &lt;node&gt;FileTexture&lt;/node&gt; to the &lt;node&gt;Texture&lt;/node&gt; input of Quad.&cr;&lf;&lt;br /&gt;&cr;&lf;The &lt;node&gt;FileTexture&lt;/node&gt; node loads in an image file, and creates a &lt;concept&gt;Texture&lt;/concept&gt; which you can apply to your graphical objects.&cr;&lf;&lt;br /&gt;&cr;&lf;Textures are stored on the graphics card, and can be used in all sorts of ways to manipulate your objects with image data (e.g. image maps, height maps, bump maps, etc).&cr;&lf;&lt;/li&gt;&cr;&lf;&cr;&lf;&lt;li&gt;&lt;rmb/&gt;&lt;click/&gt; on the &lt;pin&gt;Filename&lt;/pin&gt; input of &lt;node&gt;FileTexture&lt;/node&gt; and select an image from your own computer. You should now see that image applied to the quad.&lt;/li&gt;&cr;&lf;&cr;&lf;&lt;li&gt;Now let&apos;s load a specific texture. We go to the VVVV folder where you have it installed. We go to the &apos;girlpower&apos; folder. Then we go to the &apos;images&apos; folder (vvvv/girlpower/images). Now select the file &quot;ring thin.bmp&quot;. We should now be drawing a circle to the screen. If the &lt;node&gt;Renderer&lt;/node&gt; is square, the circle will be square. But if the &lt;node&gt;Renderer&lt;/node&gt; is squashed, so will the circle be.&lt;/li&gt;&cr;&lf;&cr;&lf;&lt;li&gt;To straighten the circle, we need to counteract the &lt;concept&gt;Aspect Ratio&lt;/concept&gt;of the &lt;node&gt;Renderer&lt;/node&gt;. We do this with some simple maths. Create a &lt;node&gt;/ (Value)&lt;/node&gt; node (this node divides numers. i.e. 4/2 = 2).&cr;&lf;&lt;br /&gt;&cr;&lf;Attach the 2 inputs of the &lt;node&gt;/&lt;/node&gt; to the &lt;pin&gt;Width&lt;/pin&gt; and &lt;pin&gt;Height&lt;/pin&gt; output pins of the &lt;node&gt;Renderer&lt;/node&gt; respectively. Create an &lt;node&gt;IOBox&lt;/node&gt; and attach it to the &lt;node&gt;IOBox&lt;/node&gt;&apos;s output to visualise the output. This number represents the aspect ratio. Go into &lt;node&gt;Inspektor&lt;/node&gt; and set the &lt;pin&gt;Descriptive Name&lt;/pin&gt; of the IOBox to &lt;b&gt;Aspect Ratio&lt;/b&gt;&cr;&lf;&lt;br /&gt;&cr;&lf;Now add a &lt;node&gt;Scale (Transform)&lt;/node&gt; (not vector version!) above your &lt;node&gt;Quad&lt;/node&gt;. Connect to your &lt;node&gt;Quad&lt;/node&gt;&apos;s &lt;pin&gt;Transform&lt;/pin&gt; pin. Connect the output of your &lt;b&gt;Aspect Ratio&lt;/b&gt; to the &lt;pin&gt;Y&lt;/pin&gt; input of &lt;node&gt;Scale&lt;/node&gt;. The aspect ratio should now be fixed for your quad, regardless of the &lt;node&gt;Renderer&lt;/node&gt;&apos;s aspect ratio.&cr;&lf;&lt;br /&gt;&cr;&lf;Because you now have a link going upwards in the graph, it looks a little messy. Feel free to select it and tidy it up using either &lt;key&gt;Ctrl&lt;/key&gt;+&lt;key&gt;Y&lt;/key&gt; to curve it, and/or &lt;key&gt;Ctrl&lt;/key&gt;+&lt;key&gt;H&lt;/key&gt; to &apos;hide&apos; it.&cr;&lf;&lt;/li&gt;&cr;&lf;&cr;&lf;&lt;li&gt;&cr;&lf;Scale down the quad using a &lt;node&gt;UniformScale (Transform)&lt;/node&gt; node. Attach this to the input of your &lt;node&gt;Scale&lt;/node&gt; node and reduce the &lt;pin&gt;XYZ&lt;/pin&gt; input to &lt;b&gt;0.1&lt;/b&gt;. Remember you can edit the value both by &lt;click/&gt;&lt;rmb/&gt; on the pin and then typing a &lt;key&gt;0&lt;/key&gt;&lt;key&gt;.&lt;/key&gt;&lt;key&gt;1&lt;/key&gt;&lt;key&gt;Enter&lt;/key&gt;, or &lt;hold/&gt;&lt;rmb/&gt; on the pin and move the mouse up/down.&cr;&lf;&cr;&lf;&lt;li&gt;Create a &lt;node&gt;Translate (Transform)&lt;/node&gt; node (again, not the vector version!). and attach that to the &lt;node&gt;UniformScale&lt;/node&gt;&apos;s input&lt;/li&gt;&cr;&lf;&cr;&lf;&lt;/ol&gt;&cr;&lf;&cr;&lf;Ok before going any further. Take some time to figure out what&apos;s happening. This is some vety common VVVV fundamentals going on (Transforms, Layer, Texture, Maths).&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Notice how everthing is wired up for 1 object. There&apos;s 1 aspect ratio correcting scale, 1 uniform scale, 1 texture, 1 quad.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Now let&apos;s step it up! Create a &lt;node&gt;LinearSpread&lt;/node&gt; node above the &lt;node&gt;Translate&lt;/node&gt; and attach the &lt;pin&gt;Output&lt;/pin&gt; to &lt;node&gt;Translate&lt;/node&gt;&apos;s &lt;pin&gt;X&lt;/pin&gt;input. Now check the top right input pin of &lt;node&gt;LinearSpread&lt;/node&gt;, &lt;pin&gt;Spread Count&lt;/pin&gt;. Let&apos;s increase this value.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;As you see you get lots of circles renderered to the screen. Check the &lt;pin&gt;Output&lt;/pin&gt; of &lt;node&gt;LinearSpread&lt;/node&gt; by rolling your mouse over the output (you dont need to click). It might look something like this: &cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;&lt;b&gt;Output: (3) -0.3333~&lt;/b&gt;&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;This means there are 3 slices in the spread, and the first slice has a Value of approximately -0.3333 (the &lt;b&gt;~&lt;/b&gt; denotes approximate).|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Descriptive Name" encoded="0" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="98" srcpinname="Layer" dstnodeid="97" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="102" srcpinname="Output" dstnodeid="101" dstpinname="Y" hiddenwhenlocked="1">
+   </LINK>
+   </PATCH>

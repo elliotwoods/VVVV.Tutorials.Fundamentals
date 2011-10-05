@@ -1,0 +1,275 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
+   <PATCH nodename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\3. IOBox #3.v4p" filename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\3. IOBox #3.v4p" locked="0" systemname="3. IOBox #3">
+   <BOUNDS height="12555" left="14490" top="885" type="Window" width="8370">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="0" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="150" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="1095" left="225" top="150" type="Box" width="7665">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|3. IOBox #3|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="42">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="2" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="105" top="11205" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="750" left="105" top="11205" type="Box" width="5325">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Created by Elliot Woods.&cr;&lf;Distributed under the MIT license (check file LICENSE) for details.&cr;&lf;Generally you can do whatever you want with these files. have fun!|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="5" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5805" top="2640" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="540" left="5805" top="2640" type="Box" width="2085">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Author">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="6" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="1260" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="1155" left="225" top="1260" type="Box" width="7665">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Description">
+   </PIN>
+   </NODE>
+   <INFO author="Elliot Woods" description="Spreaded IOBoxes, the Inspektor" tags="IOBox, Slider, Inspektor, Help patch">
+   </INFO>
+   <NODE componentmode="Hidden" filename="Subpatches\GetMetadata (VVVV).v4p" hiddenwhenlocked="1" id="10" nodename="GetMetadata (VVVV)" systemname="GetMetadata (VVVV)">
+   <BOUNDS height="100" left="5820" top="1800" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   <BOUNDS height="3465" left="14520" top="5520" type="Window" width="4680">
+   </BOUNDS>
+   <PIN pinname="Author" visible="1">
+   </PIN>
+   <PIN pinname="Description" visible="1">
+   </PIN>
+   <PIN pinname="Tags" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="8" nodename="PatchAlias (VVVV)" systemname="PatchAlias (VVVV)">
+   <BOUNDS height="100" left="5820" top="1350" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="10" dstpinname="Patch" hiddenwhenlocked="1" srcnodeid="8" srcpinname="Patch">
+   </LINK>
+   <LINK dstnodeid="6" dstpinname="Input String" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="10" srcpinname="Description">
+   <LINKPOINT x="6445" y="2205">
+   </LINKPOINT>
+   <LINKPOINT x="245" y="2355">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="InABox" id="11" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="2640" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="540" left="225" top="2640" type="Box" width="5520">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Tags">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="11" dstpinname="Input String" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="10" srcpinname="Tags">
+   <LINKPOINT x="7015" y="2293">
+   </LINKPOINT>
+   <LINKPOINT x="275" y="2448">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="5" dstpinname="Input String" hiddenwhenlocked="1" srcnodeid="10" srcpinname="Author">
+   </LINK>
+   <NODE componentmode="InABox" id="12" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="2790" top="3660" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="360" left="2790" top="3660" type="Box" width="2025">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[0 -The Inspektor]&cr;&lf;Let&apos;s create a set of sliders.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Create a new &lt;node&gt;IOBox&lt;/node&gt; with &lt;click2/&gt;&lt;rmb/&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;There are 2 pins on the IOBox at present:&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;&lt;pin&gt;Y Input Value&lt;/pin&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;pin&gt;Y Output Value&lt;/pin&gt;&lt;/li&gt;&cr;&lf;&lt;/ul&gt;&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;However, there are many hidden pins on the IOBox that can configure it in all sorts of ways. To see these hidden pins, we need to use the &lt;node&gt;Inspektor&lt;/node&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;To open the &lt;node&gt;Inspektor&lt;/node&gt;:&cr;&lf;&lt;ol&gt;&cr;&lf;&lt;li&gt;Select the &lt;node&gt;IOBox&lt;/node&gt; with a single &lt;click/&gt;&lt;lmb/&gt; (it should now be highlighted. To deselect an object, &lt;click/&gt;&lt;lmb/&gt; in an empty area of the patch).&lt;/li&gt;&cr;&lf;&lt;li&gt;Press &lt;key&gt;Ctrl&lt;/key&gt;+&lt;key&gt;I&lt;/key&gt;. This should bring up the &lt;node&gt;Inspektor&lt;/node&gt; window.&cr;&lf;&lt;/ol&gt;&cr;&lf;&cr;&lf;The &lt;node&gt;Inspektor&lt;/node&gt; will show you hidden properties about whatever you have selected.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;The pins shown in the &lt;node&gt;Inspektor&lt;/node&gt; are split into 3 areas:&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;Config pins&lt;/b&gt; - These pins can only be edited using the Inspektor.&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;Input pins&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;b&gt;Output pins&lt;/b&gt;&lt;/li&gt;&cr;&lf;&lt;/ul&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="47">
+   <BOUNDS type="Node" left="2055" top="4845" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2055" top="4845" width="3420" height="1185">
+   </BOUNDS>
+   <PIN pinname="Columns" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-10000">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="10000">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" values="0,0,0,0">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" values="0,0,0,0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="48" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="1995" top="4350" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="330" left="1995" top="4350" type="Box" width="3765">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[1 - Configuring a set of sliders I]&cr;&lf;With the &lt;node&gt;Inspektor&lt;/node&gt; open, let&apos;s change some settings of the &lt;node&gt;IOBox&lt;/node&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;First let&apos;s make our &lt;node&gt;IOBox&lt;/node&gt; work with 8 values at once. We do this by setting the following configuration properties:&cr;&lf;&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;Set &lt;pin&gt;SliceCount Mode&lt;/pin&gt; to &apos;ColsRowsPages&apos; (remember to use &lt;click/&gt;&lt;rmb/&gt; to change variables&lt;/li&gt;&cr;&lf;&lt;li&gt;Set &lt;pin&gt;Columns&lt;/pin&gt; to &apos;4&apos;&lt;/li&gt;&cr;&lf;&lt;/ul&gt;&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Now let&apos;s resize the &lt;node&gt;IOBox&lt;/node&gt;. To do this move your cursor to the bottom edge of the node on the right hand side, your cursor should change to a resize icon. Now drag out the size of the node.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;We should have 4 values shown.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="50">
+   <BOUNDS type="Node" left="2055" top="6945" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2055" top="6945" width="3420" height="1185">
+   </BOUNDS>
+   <PIN pinname="Columns" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-10000">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="10000">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" values="0,0,0,1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" values="0,0,0,1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="49" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="1965" top="6450" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="330" left="1965" top="6450" type="Box" width="3765">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[2 - Configuring a set of sliders II]&cr;&lf;Now let&apos;s change the visual style. &lt;br /&gt;&cr;&lf;&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;Turn &lt;b&gt;on&lt;/b&gt; &lt;pin&gt;Show Grid&lt;/pin&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;Turn &lt;b&gt;off&lt;/b&gt; &lt;pin&gt;Show Value&lt;/pin&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;Turn &lt;b&gt;on&lt;/b&gt; &lt;pin&gt;Show Slider&lt;/pin&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;Set &lt;pin&gt;Slider Behaviour&lt;/pin&gt; to &lt;b&gt;Slider&lt;/b&gt;&lt;/li&cr;&lf;&lt;/ul&gt;&cr;&lf;&cr;&lf;Let&apos;s visualise the output of this. &lt;click2/&gt;&lt;rmb/&gt; and select &lt;b&gt;4D Vector&lt;/b&gt;. Put this beneath your sliders and connect the &lt;pin&gt;Y Value Output&lt;/pin&gt; of your sliders to the &lt;pin&gt;Y Value Input&lt;/pin&gt; of your 4D Vector &lt;node&gt;IOBox&lt;/node&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Now try interacting with your sliders by dragging the right mouse button &lt;hold/&gt;&lt;rmb/&gt; up and down on each slider.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;We find that the sliders can move between -1000 and 1000. We can change this range using the &lt;pin&gt;Minimum&lt;/pin&gt; and &lt;pin&gt;Maximum&lt;/pin&gt; Values in the &lt;node&gt;Inspektor&lt;/node&gt;.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="52">
+   <BOUNDS type="Node" left="2040" top="8445" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2040" top="8445" width="795" height="960">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|" encoded="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="50" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Y Input Value">
+   </LINK>
+   <NODE componentmode="InABox" id="61" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="2610" top="10050" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="345" left="2610" top="10050" type="Box" width="2085">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[3 - Help patches]&cr;&lf;VVVV has a built in help mechanism for most common nodes. To open a &lt;concept&gt;Help Patch&lt;/concept&gt;, select a node &lt;click/&gt;&lt;lmb/&gt;(e.g. an &lt;node&gt;IOBox&lt;/node&gt;) and press &lt;key&gt;F1&lt;/key&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;The &lt;node&gt;IOBox&lt;/node&gt; help patch displays a thorough set of information about how that node works.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Let&apos;s try another one. First create a &lt;node&gt;Homography (Transform 2d)&lt;/node&gt; node. Then select it &lt;click/&gt;&lt;lmb/&gt; and press &lt;key&gt;F1&lt;/key&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Try interacting with the top right &lt;node&gt;IOBox&lt;/node&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Homography (Transform 2d)" nodename="Homography (Transform 2d)" componentmode="Hidden" id="62">
+   <BOUNDS type="Node" left="3120" top="10530" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   </PATCH>

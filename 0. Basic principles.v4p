@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
-   <PATCH nodename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\0. Basic principles.v4p" filename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\template.v4p" locked="0" systemname="template">
-   <BOUNDS height="13530" left="-9240" top="1005" type="Window" width="8370">
+   <PATCH nodename="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\0. Basic principles.v4p" filename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\template.v4p" locked="0" systemname="template">
+   <BOUNDS height="13530" left="12480" top="765" type="Window" width="8370">
    </BOUNDS>
    <NODE componentmode="InABox" id="0" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="270" left="225" top="150" type="Node" width="1380">
@@ -370,6 +370,26 @@
    <BOUNDS height="345" left="3555" top="9660" type="Box" width="2535">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[8 - Links again]&cr;&lf;1 output can be linked to several inputs&cr;&lf;&lt;br/&gt;&cr;&lf;1 input can only be linked to 1 output&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Links can be created by either first selecting the output, then the input, or vice versa. (Both times, using &lt;click/&gt;&lt;lmb/&gt;&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;If you want to make a link from 1 output to multiple inputs, then you can either create them all one by one using &lt;click/&gt;&lt;lmb/&gt;, or you can create them more quickly by starting to create the link from the &lt;pin&gt;output&lt;/pin&gt; pin using the right mouse button &lt;click/&gt;&lt;rmb/&gt;. Now every time you &lt;click/&gt;&lt;lmb/&gt; an &lt;pin&gt;input&lt;/pin&gt; to make a connection, you will still have the &lt;pin&gt;output&lt;/pin&gt; selected and be free to create a new connection to another input using 1 more &lt;click/&gt;&lt;lmb/&gt; without reselecting the output. Right click &lt;click/&gt;&lt;rmb/&gt; in blank space to get rid of the link you are creating..&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;If you start to make a link by accident, right click &lt;click/&gt;&lt;rmb/&gt; in a blank area to clear.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;A common error is to &apos;miss&apos; when trying to make a connection (this is either through being inaccurate with the mouse, or by selecting the wrong pin to connect to). This means that no link has been made, but you still likely have the link attached to your mouse. Be careful of this, make sure the link is created properly and still exists after you move the mouse away! Otherwise try again.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;To &apos;smarten up&apos; your links follow these steps:&cr;&lf;&lt;ol&gt;&cr;&lf;&lt;li&gt;&cr;&lf;Select them (either lasso a few of them at once by dragging out a selection box around them, or select them one by one with left mouse button).&cr;&lf;&lt;/li&gt;&cr;&lf;&lt;li&gt;&cr;&lf;Press &lt;key&gt;Ctrl&lt;/key&gt;+&lt;key&gt;Y&lt;/key&gt; until you get the style of your choice (Right angles, Curves, Direct)&cr;&lf;&lt;/li&gt;&cr;&lf;&lt;/ol&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="38" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5625" top="10980" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="345" left="5625" top="10980" type="Box" width="2535">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[9 - Help and tutorials]&cr;&lf;There are some great tutorials to help you out if you&apos;re stuck / get curious:&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;If you want help about a node, select it with &lt;click/&gt;&lt;lmb/&gt; and press &lt;key&gt;F1&lt;/key&gt;&lt;/li&gt;&cr;&lf;&lt;li&gt;If you want to see examples of what you can do with VVVV, check the &lt;b&gt;girlpower&lt;/b&gt; folder within the VVVV directory for sample patches&lt;/li&gt;&cr;&lf;&lt;li&gt;Make sure to make a user on the &lt;b&gt;www.vvvv.org&lt;/b&gt; website, and post your queries in the forum&lt;/li&gt;&cr;&lf;&lt;li&gt;Check out West&apos;s VVVV tutorial videos on YouTube&lt;/li&gt;&cr;&lf;&lt;/ul&gt;|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>

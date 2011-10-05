@@ -1,0 +1,19 @@
+	h2 {font-family:Tahoma; font-size:14px; color:white; background:grey; padding:10px;}
+	h2 {font-family:Tahoma; font-size:14px; color:white; background:grey; padding:10px;}
+	p {font-family:Tahoma; font-size:14px; color:black;line-height:150%;}
+	ol {font-family:Tahoma; font-size:14px; color:black;line-height:150%;}
+	ul {font-family:Tahoma; font-size:14px; color:black;line-height:150%;}
+	li {padding-bottom: 10px;}
+
+	node {
+		font-family:Tahoma, font-size:14px; color:black;
+		background:#DDD;
+		border-style:solid;
+		border-left:none; border-right:none;
+		border-top: 4px solid #AAA; border-bottom:4px solid #AAA;
+		padding-top:0px; padding-bottom:0px; 
+		padding-left:5px; padding-right:5px;
+		}
+	pin {background:#; border-bottom:5px groove #AAA;}
+	key {border:1px solid; background: #DDD; color: #000; padding: 2px;}
+	concept {background:#; border-bottom:3px solid #CCC;}

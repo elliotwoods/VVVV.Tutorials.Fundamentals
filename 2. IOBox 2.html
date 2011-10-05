@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<html>
+<head>
+<title>Annotations</title>
+<script>
+		document.createElement('node');
+		document.createElement('pin');
+		document.createElement('key');
+		document.createElement('concept');
+	
+		document.createElement('lmb');
+		document.createElement('rmb');
+		document.createElement('mmb');
+		document.createElement('scroll');
+		
+		document.createElement('click');
+		document.createElement('click2');
+		document.createElement('hold');
+		document.createElement('release');
+	</script>
+<link rel="stylesheet" type="text/css" href="html_resources/style.css" />
+</head>
+<body>
+<img src="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\2. IOBox 2.png" />
+<h2>0 - IOBox  II</h2>
+<p>  The <node>IOBox (Value Advanced)</node> supports many different ways of dealing with values.  </p><p>    Try interacting with these IOBox's. Remember to interact you use the <click/><rmb/>right mouse button.</p>
+<h2>1 - Toggle</h2>
+<p>  A <concept>Toggle</concept> is a very simple message that can be sent around the patch. It generally switches something downstream like 'enable this'.  </p><p>    A toggle is simply a Value of either 0 or 1.  </p><p>     0 denotes low or 'off', 1 denotes high or 'on'.  </p><p></p>
+<h2>2 - Bang</h2>
+<p>  A <concept>Bang</concept> is another very simple message that can be sent around the patch. It generally tells something downstream to 'do something', like 'reset' or 'start'.  </p><p>    The message only exists for an instance, then disappears. It's like poking someone on the shoulder. A bang is 'instantaneous'.  </p><p>    If you're familiar with bangs from Max/MSP, then you're likely <b>NOT</b> going to be very familiar with bangs in VVVV. Watch out! They work very differently!  </p><p>    A bang is also represented by a Value. The substance of that Value is either 0 or 1 for a bang. The Value is 1 to denote a bang being sent. A bang lasts for 1 frame, after which the value returns back down to 0.  </p><p></p>
+<h2>3 - Bangs and Toggles example</h2>
+<p>  Let's try out <concept>Bang</concept>s and <concept>Toggle</concept>s!  </p><p>    Let's create:  <ul>  <li>1 IOBox Toggle + 1 IOBox Bang*</li>  <li>1 <node>Stopwatch (Animation)</node></li>  <li>1 IOBox value </li>  </ul>  </p><p>    * To create a toggle IOBox, double right click <click2/><rmb/> and select 'Toggle' from the menu. Do the same for bang, but this time select 'Bang'.  </p><p>    For the bottom IOBox, let's use another shortcut. First <click/><lmb/> on the <pin>Output</pin> pin of <node>Stopwatch</node>. Move your mouse away and then click the middle mouse button <click/><mmb/>, this should automatically create a new connected <node>IOBox</node> for you of the correct type for what it's connected to. <click/><mmb/> on the <node>IOBox</node> again to give it a label.  </p><p>    Now connect everything up as shown in the diagram.  </p><p>    We can also give names to IOBox's very easily. Since they are now connected to the Stopwatch node's <pin>Run</pin>, <pin>Reset</pin> and <pin>Output</pin> pins respectively, we can copy these names into the IOBox's. To do this, we middle click <click/><mmb/> on the 3 IOBox's one by one.  </p><p>    Now try to interact with the 'Run' and 'Reset' boxes that you have created using right click <click/><rmb/>.</p>
+<h2>4 - Color</h2>
+<p>  A <concept>Color</concept> is a datatype within VVVV. It allows you to deal with colour values.  </p><p>  Colours have obvious graphical uses such as determining the colour of objects that you want to render.  </p><p>  There are many nodes that allow you deal with colours directly, or convert them to other data types.</p>
+<h2>5 - String</h2>
+<p>  A <concept>String</concept> is another datatype within VVVV. It allows you to deal with text.  </p><p>  VVVV works with UTF-8 encoded strings (international text) as well as ANSI strings (simple latin english text) + multi-line text.  </p><p>  Strings can also be used for dealing with URLs, Filenames, Directory names and other text-based assets. In these cases VVVV has some helpful ways of dealing with strings to make life more lovely.</p>
+<h2>6 - Enum</h2>
+<p>  An <concept>Enum</concept> is a perculiar datatype in VVVV. It is in general the only data type to learn something from downstream. Almost all other types only send data downstream, and do not feed back any data upstream (this is quite fundamental to how VVVV works).  </p><p>    An enum is an enumeration of options. The node which an enum is connected to will tell it which options are available. An example of a node with an enum input is <node>Fill (EX9.Renderstate)</node>.    </p>
+</body>
+</html>
