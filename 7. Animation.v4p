@@ -734,4 +734,38 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="Timeliner (Animation)" filename="%VVVV%\plugins\Timeliner.dll" nodename="Timeliner (Animation)" componentmode="Hidden" id="194">
+   <BOUNDS type="Node" left="8910" top="12675" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8910" top="12675" width="6000" height="3000">
+   </BOUNDS>
+   <BOUNDS type="Window" left="16230" top="13275" width="9000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Translate" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Scale" slicecount="1" values="50">
+   </PIN>
+   <PIN pinname="Pin Settings" slicecount="1" values="|&lt;PIN Name=&quot;Ruler0&quot; Type=&quot;Ruler&quot; SliceCount=&quot;0&quot; Height=&quot;40&quot; Parent=&quot;0&quot; /&gt;|" encoded="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="195" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="8925" top="12195" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="330" left="8925" top="12195" type="Box" width="1815">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[3 - Timeliner]&cr;&lf;The &lt;node&gt;Timeliner&lt;/node&gt; node is a fantastic tool for advanced animations. Check out the help patch for it by creating the node and pressing &lt;key&gt;F1&lt;/key&gt; whilst it is selected.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
    </PATCH>

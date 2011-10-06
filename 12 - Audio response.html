@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<html>
+<head>
+<title>Annotations</title>
+<script>
+		document.createElement('node');
+		document.createElement('pin');
+		document.createElement('key');
+		document.createElement('concept');
+	
+		document.createElement('lmb');
+		document.createElement('rmb');
+		document.createElement('mmb');
+		document.createElement('scroll');
+		
+		document.createElement('click');
+		document.createElement('click2');
+		document.createElement('hold');
+		document.createElement('release');
+	</script>
+<link rel="stylesheet" type="text/css" href="html_resources/style.css" />
+</head>
+<body>
+<img src="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\12 - Audio response.png" />
+<h2>0 - RMS</h2>
+<p>    Ok, presuming there's a microphone on the computer you're using, then we can measure the sound in the environment. This could be music, speech or whatever.  </p><p>    Let's create an <node>AudioIn</node> node, and connect it to an <node>RMS</node> node. Change the <pin>Enabled</pin> pin on <node>AudioIn</node> to <b>1</b>. Create a <b>2D Vector</b> <node>IOBox</node> and attach it to the output of <node>RMS</node>. The numbers should show the audio level,  </p><p>    The 2 numbers reperesent the left and right channels. Create a <node>Mean (Spectral)</node> node to average out these 2 values. Attach the output of the <node>IOBox</node> to the <node>Mean</node>'s input.  </p><p>    Put a normal <node>IOBox</node> on the output.    Let's grab the 'Audi' patch (the one that renders rings) from our previous Spreads tutorial.    </p>
+<h2>1 - Amplification</h2>
+<p>    This value is quite low, so let's feed it into a <node>* (Value)</node> node and put another <node>IOBox</node> on the other input of the <node>*</node>. Set the value of the second <node>IOBox</node> to something like <b>20</b>.  </p><p>    Put an <node>IOBox</node> on the output of the <node>*</node>. Adjust the amplification factor (the number in the second <node>IOBox</node> until the values start varying between <b>0 and 1</b> when sound is being detected.  </br></p>
+<h2>2 - Queue</h2>
+<p>  If we want to keep a history of these values, we can use the <node>Queue (Spreads)</node> node. Let's create one now.  </p><p>    Connect the sound intensity to the <node>Queue</node>'s <pin>Input</pin>. Set the <pin>Frame Count</pin> to <b>100</b>. Create a <b>Toggle</b> <node>IOBox</node> and set it to high (i.e. <b>1</b>) and connect the output to <pin>Insert</pin> on the <node>Queue</node>.    Now it will keep a history of the last 20 sound intensity values. These are output in a spread of Spread Count 20 on the bottom of <node>Queue</node>.  </p><p>    Copy in the 'Audi' patch which rendered the rings from tutorial 6. Spreads.  </p><p>    Connect the <pin>Output</pin> of the <node>Queue</node> to the <pin>Y</pin> input on the <node>Translate</node> node. and set the <node>LinearSpread</node> on the <node>Translate</node>'s <pin>X</pin> pin to have <pin>Spread Count</pin <b>20</b> and <pin>Width</pin> <b>2</b>.  </p><p>    You should now have a graph of the past 20 values of sound amplitude.</p>
+<h2>3 - FFT</h2>
+<p>  The <node>FFT</node> gives us a detailed view of what intensity of each frequency is being heard by the computer.  </p><p>    To set it up, it's very similar to <node>RMS</node>. We create an <node>AudioIn</node>, set <pin>Enabled</pin> to <b>1</b>, and connect it to an <node>FFT</node> node.  </p><p>    To visualise its output, let's create an <node>IOBox</node> and attach it to the <pin>FFT L</pin> output of <node>FFT</node>. This gives 256 frequencies within the left channel. Low indexes in the spread are bass, high indices are treble. Since we have 256 values, it's hard to visualise it as numbers in an <node>IOBox</node>.  </p><p></p>
+<h2>3 - Visualising 256 slices in an IOBox</h2>
+<p>  Go to the <node>Inspektor</node> and set the following properties for the <node>IOBox</node>  <ol>  <li>Set the <pin>Columns</pin> to <b>256</b></li>  <li>Set <pin>Show Value</pin> to <b>false</b></li>  <li>Set <pin>Show Connections</pin> to <b>true</b></li>  <li>Set the <pin>Maximum</pin> to <b>1</b></li>  <li>Set the <pin>Minimum</pin> to <b>0</b></li>  </ol>  </p><p>    If the values are too small to see, then add an amplification factor between </p>
+<h2>4 -Exercise</h2>
+<p>  Try to recreate this patch.  </p><p>    Some notes:  <ul>  <li>To fix the Aspect Ratio, we're using a <node>Scale</node> connected to the <pin>View</pin> transform pin on the <node>Renderer</node> rather than on the object. This applies the transform to the whole scene</li>  <li><node>Resample</node> is used to resize the spread from count 256 to <b>16</b>. The <pin>Mode</pin> is set to <b>Point</b> so that the values are resampled proeprly. This is like resamping an image in Photoshop</li>  <li>A segment is an object that renders a circle or an arc. By Setting the <pin>Inner Radius</pin> to <b>0.95</b> we get a ring.</li>    </ul></p>
+</body>
+</html>

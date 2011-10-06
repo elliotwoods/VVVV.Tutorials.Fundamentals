@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<html>
+<head>
+<title>Annotations</title>
+<script>
+		document.createElement('node');
+		document.createElement('pin');
+		document.createElement('key');
+		document.createElement('concept');
+	
+		document.createElement('lmb');
+		document.createElement('rmb');
+		document.createElement('mmb');
+		document.createElement('scroll');
+		
+		document.createElement('click');
+		document.createElement('click2');
+		document.createElement('hold');
+		document.createElement('release');
+	</script>
+<link rel="stylesheet" type="text/css" href="html_resources/style.css" />
+</head>
+<body>
+<img src="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\11 - Shaders.png" />
+<h2>0 - What is a shader?</h2>
+<p>    A <concept>Shader</concept> is an advanced piece of graphics programming which runs on the graphics card. It lets a developer specify in detail how an object should be rendererd to the screen.   </p><p>    In VVVV, shaders are commonly called <concept>Effects</concept>, and are represented by a file with extension <b>.fx</b>.  </p><p>    The idea of modern shaders was created (afaik) by <b>Pixar</b> as part of their <b>RenderMan</b> rendering package in the late 1980's. Their shaders ran on the CPU and took a long time to calculate for a scene. With the introduction of new graphics cards (Around the time the GeForce FX was released), it became possible to write programs that ran directly on the <concept>GPU</concept> (Graphics Processing Unit).  </p><p>    The GPU is capable of calculating lots of small programs in parallel (sometimes hundreds of programs simultanaously). These programs are called shaders and be used to:  <ul>  <li><concept>Geometry shader</concept> - Generate geometry</li>  <li><concept>Tesselation shader</concept> - Increase an object's detail</li>  <li><concept>Vertex shader</concept> - Manipulate vertices</li>  <li><concept>Pixel shader</concept> or <concept>Fragment shader</concept> - Control pixel by pixel rendering</li>  </ul>  </p>
+<h2>1 - Basic shader usage</h2>
+<p>    In VVVV, you apply a <concept>Effect</concept> to a <concept>Mesh</concept>. The shader may accept 1 or more <concept>Texture</concept>s, and will always accept at least 1 <concept>Transform</concept> (this is the <concept>World transform</concept> which is accepted on the generically named <pin>Transform</pin> pin).  </p><p>    The most basic shader packaged with VVVV is called <node>Constant (EX9.Effect)</node>. Create one of these now and attach it to a <node>Renderer</node>.  </p><p>    The <node>Renderer</node> will remain black, as there is no <concept>Mesh</concept> attached to the shader. There are a number of common meshes built into VVVV:  <ul>  <li>Box</li>  <li>Sphere</li>  <li>Grid</li>  <li>Teapot</li>  <li>Cylinder</li>  <li>Torus</li>  </ul>    You can list the availble meshes by searching for <b>EX9.Geometry</b> in the <node>NodeBrowser</node>.  </p><p>    Let's attach a <node>Cylinder (EX9.Geometry)</node> to the <pin>Mesh</pin> of the <node>Constant</node> shader node.  </p><p>    Because we are looking side on, we see a square. Let's add a <node>Camera</node>, and <node>Group</node> in an <node>AxisAndGrid (DX9)</node> to get some context.  </p><p>    Turn on the Antialiasing and Depth Bufffer quality options.  </p><p>    We should see a very 'flat' looking cylinder within the scene.</p>
+<h2>2 - Other shaders</h2>
+<p>  There's lots of great shaders to make smooth results. Some examples of these are:  <ul>  <li>GourandDirectional</li>  <li>GourandPoint</li>  <li>PhongDirectional</li>  <li>PhongPoint</li>  </ul>  </p><p>    And there are many online in the <concept>Contributions</concept> area of the VVVV website.  </p><p>    Let's have a look at some now.  </p><p>    Copy the patch you just made with the earth cylinder and delete the texture transform (<node>LFO</node> and <node>Translate</node>).  </p><p>    Double click <img src="html_resources/click2.png"/><img src="html_resources/lmb.png"/> on the <node>Constant</node> node to bring up the <node>NodeBrowser</node>. Select <node>PhongPoint</node>. You will notice that this node has many more input pins, to allow you to change many properties regarding how the shader is drawn.  </p><p>    Use the same method to switch the <node>Cylinder</node> mesh with a <node>Sphere (EX9.Geometry)</node>.  </p><p>    Create a <node>Translate (Transform Vector)</node> and attach it to the <pin>Transform</pin> of the shader.  </node>    Attach a <node>RandomSpread</node> to the <pin>XYZ</pin> input of the <node>Translate</node>, and set the <pin>SpreadCount</pin> to <b>30</b> to create 10 3D vectors, i.e. 10 spheres. Set the <pin>Width</pin> of the <node>RandomSpread</node> to <b>5</b>.  </p><p>    Now let's animate using a <node>DeNiro</node> and <node>LFO</node> like we did before.  </p><p>  </p>
+<h2>2 - Texture transforms</h2>
+<p>    Let's add a texture to the <node>Cylinder</node> using <node>FileTexture</node>. Select the <b>Earth 512x512.jpg</b> image from within the vvvv/girlpower/images folder.  </p><p>    Now add a <node>Translate (Transform)</node> and connect it to the <pin>Texture Transform</pin> input pin on the <node>Constant</node> shader. This allows you to move the position of the texture on the object. Try rolling the <pin>X</pin> input value on <node>Translate</node>.  </p><p>    Let's add an <node>LFO</node> and connect the <pin>Output</pin> to the <pin>X</pin> pin of the <node>Translate</node>.</p>
+<h2>3 - Lighting</h2>
+<p>  Notice that one of the input pins of the <node>PhongPoint</node> is called <pin>Light Position XYZ</pin>. This pin accepts a 3D position for the light.  </p><p>    Create a <b>3D Vector</b> <node>IOBox</node> and connect it to this input pin. Now the light should be at the origin (<b>0,0,0</b>).  </p><p>    This kind of light source is a point light source (i.e. a light at a particular 3D position within the scene). If you want the objects to react to a directional light source, then use <node>PhongDirectional</node> or <node>GourandDirectional</node> instead of the point versions.</p>
+<h2>4 - HLSL</h2>
+<p>  Shaders are written in a language called <concept>HLSL</concept>. To see this code, <img src="html_resources/click.png"/><img src="html_resources/rmb.png"/> on the <node>PhongPoint</node>. This brings up the <concept>Code Editor</concept>.  </p><p>    As you get more advanced with VVVV, you can try editing these shaders yourself.  </p><p>    If you want to learn more about shaders, I suggest looking at http://http.developer.nvidia.com/CgTutorial/cg_tutorial_chapter01.html (I've got that book and that's how I learnt!).</p>
+<h2>5 - GPU calculations</h2>
+<p>  GPU's have become much more powerful than CPU's (50-100x more powerful), and can therefore perform much more calculations than a CPU can within the time of 1 frame (1/60th of a second).   </p><p>    Many developers are therefore exploiting GPU's to perform calculations. One example of this is the <b>GPU Particles</b> library in the contributions section of the website, which allows you to manipulate and render 1000's of particles at the same time by harnessing the power of the GPU.</p>
+</body>
+</html>

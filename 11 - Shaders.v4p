@@ -1,0 +1,549 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
+   <PATCH nodename="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\11 - Shaders.v4p" filename="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\9. DirectX 2.v4p" locked="0" systemname="9. DirectX 2">
+   <BOUNDS height="13725" left="5310" top="600" type="Window" width="16800">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="0" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="150" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="1095" left="225" top="150" type="Box" width="7665">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|11. Shaders|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="42">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="2" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="105" top="12405" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="750" left="105" top="12405" type="Box" width="5325">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Created by Elliot Woods.&cr;&lf;Distributed under the MIT license (check file LICENSE) for details.&cr;&lf;Generally you can do whatever you want with these files. have fun!|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="5" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5805" top="2640" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="540" left="5805" top="2640" type="Box" width="2085">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Author">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="6" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="1260" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="1155" left="225" top="1260" type="Box" width="7665">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Description">
+   </PIN>
+   </NODE>
+   <INFO author="Elliot Woods" description="Introduction to shaders, how to hook them up and whats inside them." tags="Shaders, Mesh">
+   </INFO>
+   <NODE componentmode="Hidden" filename="Subpatches\GetMetadata (VVVV).v4p" hiddenwhenlocked="1" id="10" nodename="GetMetadata (VVVV)" systemname="GetMetadata (VVVV)">
+   <BOUNDS height="100" left="5820" top="1800" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   <BOUNDS height="3465" left="14520" top="5520" type="Window" width="4680">
+   </BOUNDS>
+   <PIN pinname="Author" visible="1">
+   </PIN>
+   <PIN pinname="Description" visible="1">
+   </PIN>
+   <PIN pinname="Tags" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="8" nodename="PatchAlias (VVVV)" systemname="PatchAlias (VVVV)">
+   <BOUNDS height="100" left="5820" top="1350" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="10" dstpinname="Patch" hiddenwhenlocked="1" srcnodeid="8" srcpinname="Patch">
+   </LINK>
+   <LINK dstnodeid="6" dstpinname="Input String" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="10" srcpinname="Description">
+   <LINKPOINT x="6445" y="2205">
+   </LINKPOINT>
+   <LINKPOINT x="245" y="2355">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="InABox" id="11" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="2640" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="540" left="225" top="2640" type="Box" width="5520">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Tags">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="11" dstpinname="Input String" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="10" srcpinname="Tags">
+   <LINKPOINT x="7015" y="2293">
+   </LINKPOINT>
+   <LINKPOINT x="275" y="2448">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="5" dstpinname="Input String" hiddenwhenlocked="1" srcnodeid="10" srcpinname="Author">
+   </LINK>
+   <NODE componentmode="InABox" id="103" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="8145" top="3465" type="Node" width="330">
+   </BOUNDS>
+   <BOUNDS height="7515" left="8145" top="3465" type="Box" width="345">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="||">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="12" nodename="IOBox (String)" systemname="IOBox (String)">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[0 - What is a shader?]&cr;&lf;&cr;&lf;A &lt;concept&gt;Shader&lt;/concept&gt; is an advanced piece of graphics programming which runs on the graphics card. It lets a developer specify in detail how an object should be rendererd to the screen. &cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;In VVVV, shaders are commonly called &lt;concept&gt;Effects&lt;/concept&gt;, and are represented by a file with extension &lt;b&gt;.fx&lt;/b&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;The idea of modern shaders was created (afaik) by &lt;b&gt;Pixar&lt;/b&gt; as part of their &lt;b&gt;RenderMan&lt;/b&gt; rendering package in the late 1980&apos;s. Their shaders ran on the CPU and took a long time to calculate for a scene. With the introduction of new graphics cards (Around the time the GeForce FX was released), it became possible to write programs that ran directly on the &lt;concept&gt;GPU&lt;/concept&gt; (Graphics Processing Unit).&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;The GPU is capable of calculating lots of small programs in parallel (sometimes hundreds of programs simultanaously). These programs are called shaders and be used to:&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;&lt;concept&gt;Geometry shader&lt;/concept&gt; - Generate geometry&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;concept&gt;Tesselation shader&lt;/concept&gt; - Increase an object&apos;s detail&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;concept&gt;Vertex shader&lt;/concept&gt; - Manipulate vertices&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;concept&gt;Pixel shader&lt;/concept&gt; or &lt;concept&gt;Fragment shader&lt;/concept&gt; - Control pixel by pixel rendering&lt;/li&gt;&cr;&lf;&lt;/ul&gt;&cr;&lf;|">
+   </PIN>
+   <BOUNDS height="270" left="2760" top="3765" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="375" left="2760" top="3765" type="Box" width="2460">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="230" nodename="IOBox (String)" systemname="IOBox (String)">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[1 - Basic shader usage]&cr;&lf;&cr;&lf;In VVVV, you apply a &lt;concept&gt;Effect&lt;/concept&gt; to a &lt;concept&gt;Mesh&lt;/concept&gt;. The shader may accept 1 or more &lt;concept&gt;Texture&lt;/concept&gt;s, and will always accept at least 1 &lt;concept&gt;Transform&lt;/concept&gt; (this is the &lt;concept&gt;World transform&lt;/concept&gt; which is accepted on the generically named &lt;pin&gt;Transform&lt;/pin&gt; pin).&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;The most basic shader packaged with VVVV is called &lt;node&gt;Constant (EX9.Effect)&lt;/node&gt;. Create one of these now and attach it to a &lt;node&gt;Renderer&lt;/node&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;The &lt;node&gt;Renderer&lt;/node&gt; will remain black, as there is no &lt;concept&gt;Mesh&lt;/concept&gt; attached to the shader. There are a number of common meshes built into VVVV:&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;Box&lt;/li&gt;&cr;&lf;&lt;li&gt;Sphere&lt;/li&gt;&cr;&lf;&lt;li&gt;Grid&lt;/li&gt;&cr;&lf;&lt;li&gt;Teapot&lt;/li&gt;&cr;&lf;&lt;li&gt;Cylinder&lt;/li&gt;&cr;&lf;&lt;li&gt;Torus&lt;/li&gt;&cr;&lf;&lt;/ul&gt;&cr;&lf;&cr;&lf;You can list the availble meshes by searching for &lt;b&gt;EX9.Geometry&lt;/b&gt; in the &lt;node&gt;NodeBrowser&lt;/node&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Let&apos;s attach a &lt;node&gt;Cylinder (EX9.Geometry)&lt;/node&gt; to the &lt;pin&gt;Mesh&lt;/pin&gt; of the &lt;node&gt;Constant&lt;/node&gt; shader node.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Because we are looking side on, we see a square. Let&apos;s add a &lt;node&gt;Camera&lt;/node&gt;, and &lt;node&gt;Group&lt;/node&gt; in an &lt;node&gt;AxisAndGrid (DX9)&lt;/node&gt; to get some context.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Turn on the Antialiasing and Depth Bufffer quality options.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;We should see a very &apos;flat&apos; looking cylinder within the scene.|">
+   </PIN>
+   <BOUNDS height="270" left="2655" top="4350" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="330" left="2655" top="4350" type="Box" width="2715">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\effects\Constant.fx" id="231" nodename="Constant (EX9.Effect)" systemname="Constant (EX9.Effect)">
+   <BOUNDS height="100" left="2055" top="6075" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Texture Transform" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="232" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <BOUNDS height="100" left="585" top="6915" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="5070" left="585" top="6915" type="Box" width="6900">
+   </BOUNDS>
+   <BOUNDS height="5010" left="8145" top="7245" type="Window" width="6240">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D16">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="234" nodename="Cylinder (EX9.Geometry)" systemname="Cylinder (EX9.Geometry)">
+   <BOUNDS height="100" left="2235" top="5280" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="231" dstpinname="Mesh" srcnodeid="234" srcpinname="Mesh">
+   </LINK>
+   <NODE componentmode="Hidden" filename="%VVVV%\modules\vvvv group\Transform\Camera (Transform Softimage).v4p" id="235" nodename="Camera (Transform Softimage)" systemname="Camera (Transform Softimage)">
+   <BOUNDS height="100" left="5775" top="6420" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="232" dstpinname="View" srcnodeid="235" srcpinname="View">
+   </LINK>
+   <LINK dstnodeid="232" dstpinname="Projection" srcnodeid="235" srcpinname="Projection">
+   </LINK>
+   <NODE componentmode="Hidden" id="236" nodename="Group (EX9)" systemname="Group (EX9)">
+   <BOUNDS height="270" left="585" top="6495" type="Node" width="2970">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="232" dstpinname="Layers" srcnodeid="236" srcpinname="Layer">
+   </LINK>
+   <LINK dstnodeid="236" dstpinname="Layer 2" srcnodeid="231" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="Hidden" filename="%VVVV%\modules\vvvv group\EX9\AxisAndGrid (DX9).v4p" id="237" nodename="AxisAndGrid (DX9)" systemname="AxisAndGrid (DX9)">
+   <BOUNDS height="100" left="570" top="6075" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="236" dstpinname="Layer 1" srcnodeid="237" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="InABox" id="238" nodename="IOBox (String)" systemname="IOBox (String)">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[2 - Other shaders]&cr;&lf;There&apos;s lots of great shaders to make smooth results. Some examples of these are:&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;GourandDirectional&lt;/li&gt;&cr;&lf;&lt;li&gt;GourandPoint&lt;/li&gt;&cr;&lf;&lt;li&gt;PhongDirectional&lt;/li&gt;&cr;&lf;&lt;li&gt;PhongPoint&lt;/li&gt;&cr;&lf;&lt;/ul&gt;&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;And there are many online in the &lt;concept&gt;Contributions&lt;/concept&gt; area of the VVVV website.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Let&apos;s have a look at some now.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Copy the patch you just made with the earth cylinder and delete the texture transform (&lt;node&gt;LFO&lt;/node&gt; and &lt;node&gt;Translate&lt;/node&gt;).&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Double click &lt;click2/&gt;&lt;lmb/&gt; on the &lt;node&gt;Constant&lt;/node&gt; node to bring up the &lt;node&gt;NodeBrowser&lt;/node&gt;. Select &lt;node&gt;PhongPoint&lt;/node&gt;. You will notice that this node has many more input pins, to allow you to change many properties regarding how the shader is drawn.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Use the same method to switch the &lt;node&gt;Cylinder&lt;/node&gt; mesh with a &lt;node&gt;Sphere (EX9.Geometry)&lt;/node&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Create a &lt;node&gt;Translate (Transform Vector)&lt;/node&gt; and attach it to the &lt;pin&gt;Transform&lt;/pin&gt; of the shader.&cr;&lf;&lt;/node&gt;&cr;&lf;&cr;&lf;Attach a &lt;node&gt;RandomSpread&lt;/node&gt; to the &lt;pin&gt;XYZ&lt;/pin&gt; input of the &lt;node&gt;Translate&lt;/node&gt;, and set the &lt;pin&gt;SpreadCount&lt;/pin&gt; to &lt;b&gt;30&lt;/b&gt; to create 10 3D vectors, i.e. 10 spheres. Set the &lt;pin&gt;Width&lt;/pin&gt; of the &lt;node&gt;RandomSpread&lt;/node&gt; to &lt;b&gt;5&lt;/b&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Now let&apos;s animate using a &lt;node&gt;DeNiro&lt;/node&gt; and &lt;node&gt;LFO&lt;/node&gt; like we did before.&cr;&lf;&lt;br /&gt;&cr;&lf;|">
+   </PIN>
+   <BOUNDS height="270" left="10710" top="660" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="330" left="10710" top="660" type="Box" width="2085">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="239" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
+   <BOUNDS height="100" left="3570" top="5265" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN encoded="0" pinname="Filename" slicecount="1" values="..\..\..\vvvv\vvvv_45beta26\girlpower\images\earth_512x512.jpg">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="231" dstpinname="Texture" linkstyle="VHV" srcnodeid="239" srcpinname="Texture Out">
+   <LINKPOINT x="3655" y="5728">
+   </LINKPOINT>
+   <LINKPOINT x="2825" y="5853">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="InABox" id="240" nodename="IOBox (String)" systemname="IOBox (String)">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[2 - Texture transforms]&cr;&lf;&cr;&lf;Let&apos;s add a texture to the &lt;node&gt;Cylinder&lt;/node&gt; using &lt;node&gt;FileTexture&lt;/node&gt;. Select the &lt;b&gt;Earth 512x512.jpg&lt;/b&gt; image from within the vvvv/girlpower/images folder.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Now add a &lt;node&gt;Translate (Transform)&lt;/node&gt; and connect it to the &lt;pin&gt;Texture Transform&lt;/pin&gt; input pin on the &lt;node&gt;Constant&lt;/node&gt; shader. This allows you to move the position of the texture on the object. Try rolling the &lt;pin&gt;X&lt;/pin&gt; input value on &lt;node&gt;Translate&lt;/node&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Let&apos;s add an &lt;node&gt;LFO&lt;/node&gt; and connect the &lt;pin&gt;Output&lt;/pin&gt; to the &lt;pin&gt;X&lt;/pin&gt; pin of the &lt;node&gt;Translate&lt;/node&gt;.|">
+   </PIN>
+   <BOUNDS height="270" left="4830" top="5595" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="330" left="4830" top="5595" type="Box" width="2715">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="241" nodename="Translate (Transform)" systemname="Translate (Transform)">
+   <BOUNDS height="100" left="4635" top="5265" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="231" dstpinname="Texture Transform" linkstyle="VHV" srcnodeid="241" srcpinname="Transform Out">
+   <LINKPOINT x="4665" y="5940">
+   </LINKPOINT>
+   <LINKPOINT x="3045" y="5940">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="Hidden" id="242" nodename="LFO (Animation)" systemname="LFO (Animation)">
+   <BOUNDS height="100" left="4890" top="4830" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Period" slicecount="1" values="5">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="241" dstpinname="X" srcnodeid="242" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="InABox" id="251" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <BOUNDS height="100" left="9015" top="4290" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="5070" left="9015" top="4290" type="Box" width="6900">
+   </BOUNDS>
+   <BOUNDS height="5010" left="8145" top="7245" type="Window" width="6240">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D16">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\modules\vvvv group\Transform\Camera (Transform Softimage).v4p" id="249" nodename="Camera (Transform Softimage)" systemname="Camera (Transform Softimage)">
+   <BOUNDS height="100" left="14205" top="3795" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="251" dstpinname="View" srcnodeid="249" srcpinname="View">
+   </LINK>
+   <LINK dstnodeid="251" dstpinname="Projection" srcnodeid="249" srcpinname="Projection">
+   </LINK>
+   <NODE componentmode="Hidden" id="248" nodename="Group (EX9)" systemname="Group (EX9)">
+   <BOUNDS height="270" left="9015" top="3870" type="Node" width="2970">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="251" dstpinname="Layers" srcnodeid="248" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="Hidden" filename="%VVVV%\modules\vvvv group\EX9\AxisAndGrid (DX9).v4p" id="247" nodename="AxisAndGrid (DX9)" systemname="AxisAndGrid (DX9)">
+   <BOUNDS height="100" left="9000" top="3450" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="248" dstpinname="Layer 1" srcnodeid="247" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="Hidden" id="246" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
+   <BOUNDS height="100" left="13680" top="2925" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN encoded="0" pinname="Filename" slicecount="1" values="..\..\..\vvvv\vvvv_45beta26\girlpower\images\earth_512x512.jpg">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\effects\PhongPoint.fx" id="252" nodename="PhongPoint (EX9.Effect)" systemname="PhongPoint (EX9.Effect)">
+   <BOUNDS height="270" left="10485" top="3450" type="Node" width="4860">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Texture Transform" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Light Position XYZ" slicecount="1" visible="1" values="0,0,0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="248" dstpinname="Layer 2" srcnodeid="252" srcpinname="Layer">
+   </LINK>
+   <LINK dstnodeid="252" dstpinname="Texture" linkstyle="VHV" srcnodeid="246" srcpinname="Texture Out">
+   <LINKPOINT x="13205" y="3293">
+   </LINKPOINT>
+   <LINKPOINT x="11815" y="3323">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="Hidden" id="250" nodename="Sphere (EX9.Geometry)" systemname="Sphere (EX9.Geometry)">
+   <BOUNDS height="100" left="10755" top="2955" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="252" dstpinname="Mesh" srcnodeid="250" srcpinname="Mesh">
+   </LINK>
+   <NODE componentmode="Hidden" id="253" nodename="Translate (Transform Vector)" systemname="Translate (Transform Vector)">
+   <BOUNDS height="100" left="11010" top="2520" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="252" dstpinname="Transform" srcnodeid="253" srcpinname="Transform Out">
+   </LINK>
+   <NODE componentmode="Hidden" id="254" nodename="RandomSpread (Spreads)" systemname="RandomSpread (Spreads)">
+   <BOUNDS height="100" left="11745" top="1680" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Spread Count" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Random Seed" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="255" nodename="DeNiro (Animation)" systemname="DeNiro (Animation)">
+   <BOUNDS height="100" left="11745" top="2070" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="255" dstpinname="Go To Position" srcnodeid="254" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="253" dstpinname="XYZ" srcnodeid="255" srcpinname="Position Out">
+   </LINK>
+   <NODE componentmode="Hidden" id="256" nodename="LFO (Animation)" systemname="LFO (Animation)">
+   <BOUNDS height="100" left="11820" top="1200" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Cycles" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="254" dstpinname="Random Seed" srcnodeid="256" srcpinname="Cycles">
+   </LINK>
+   <NODE componentmode="InABox" id="258" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="12540" top="2550" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="720" left="12540" top="2550" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN encoded="0" pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="252" dstpinname="Light Position XYZ" linkstyle="VHV" srcnodeid="258" srcpinname="Y Output Value">
+   <LINKPOINT x="12540" y="3345">
+   </LINKPOINT>
+   <LINKPOINT x="11340" y="3345">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="InABox" id="259" nodename="IOBox (String)" systemname="IOBox (String)">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[3 - Lighting]&cr;&lf;Notice that one of the input pins of the &lt;node&gt;PhongPoint&lt;/node&gt; is called &lt;pin&gt;Light Position XYZ&lt;/pin&gt;. This pin accepts a 3D position for the light.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Create a &lt;b&gt;3D Vector&lt;/b&gt; &lt;node&gt;IOBox&lt;/node&gt; and connect it to this input pin. Now the light should be at the origin (&lt;b&gt;0,0,0&lt;/b&gt;).&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;This kind of light source is a point light source (i.e. a light at a particular 3D position within the scene). If you want the objects to react to a directional light source, then use &lt;node&gt;PhongDirectional&lt;/node&gt; or &lt;node&gt;GourandDirectional&lt;/node&gt; instead of the point versions.|">
+   </PIN>
+   <BOUNDS height="270" left="8595" top="2745" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="330" left="8595" top="2745" type="Box" width="2085">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="260" nodename="IOBox (String)" systemname="IOBox (String)">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[4 - HLSL]&cr;&lf;Shaders are written in a language called &lt;concept&gt;HLSL&lt;/concept&gt;. To see this code, &lt;click/&gt;&lt;rmb/&gt; on the &lt;node&gt;PhongPoint&lt;/node&gt;. This brings up the &lt;concept&gt;Code Editor&lt;/concept&gt;.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;As you get more advanced with VVVV, you can try editing these shaders yourself.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;If you want to learn more about shaders, I suggest looking at http://http.developer.nvidia.com/CgTutorial/cg_tutorial_chapter01.html (I&apos;ve got that book and that&apos;s how I learnt!).|">
+   </PIN>
+   <BOUNDS height="270" left="11865" top="9810" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="375" left="11865" top="9810" type="Box" width="1215">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="261" nodename="IOBox (String)" systemname="IOBox (String)">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[5 - GPU calculations]&cr;&lf;GPU&apos;s have become much more powerful than CPU&apos;s (50-100x more powerful), and can therefore perform much more calculations than a CPU can within the time of 1 frame (1/60th of a second). &cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;Many developers are therefore exploiting GPU&apos;s to perform calculations. One example of this is the &lt;b&gt;GPU Particles&lt;/b&gt; library in the contributions section of the website, which allows you to manipulate and render 1000&apos;s of particles at the same time by harnessing the power of the GPU.|">
+   </PIN>
+   <BOUNDS height="270" left="11325" top="10515" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="330" left="11325" top="10515" type="Box" width="2430">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   </PATCH>
