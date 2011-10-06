@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
-   <PATCH nodename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\2. IOBox #2.v4p" filename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\1. IOBox #2.v4p" locked="0" systemname="1. IOBox #2">
-   <BOUNDS height="14070" left="-8535" top="0" type="Window" width="8370">
+   <PATCH nodename="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\2. IOBox 2.v4p" filename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\1. IOBox #2.v4p" locked="0" systemname="1. IOBox #2">
+   <BOUNDS height="14070" left="13395" top="1080" type="Window" width="8370">
    </BOUNDS>
    <NODE componentmode="InABox" id="0" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="270" left="225" top="150" type="Node" width="1380">
@@ -572,6 +572,6 @@
    <PIN pinname="Fill Mode" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="36" srcpinname="Output Enum" dstnodeid="37" dstpinname="Fill Mode">
+   <LINK dstnodeid="37" dstpinname="Fill Mode" srcnodeid="36" srcpinname="Output Enum">
    </LINK>
    </PATCH>

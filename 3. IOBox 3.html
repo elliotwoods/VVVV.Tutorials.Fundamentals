@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<html>
+<head>
+<title>Annotations</title>
+<script>
+		document.createElement('node');
+		document.createElement('pin');
+		document.createElement('key');
+		document.createElement('concept');
+	
+		document.createElement('lmb');
+		document.createElement('rmb');
+		document.createElement('mmb');
+		document.createElement('scroll');
+		
+		document.createElement('click');
+		document.createElement('click2');
+		document.createElement('hold');
+		document.createElement('release');
+	</script>
+<link rel="stylesheet" type="text/css" href="html_resources/style.css" />
+</head>
+<body>
+<img src="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\3. IOBox 3.png" />
+<h2>0 -The Inspektor</h2>
+<p>  Let's create a set of sliders.  </p><p>    Create a new <node>IOBox</node> with <img src="html_resources/click2.png"/><img src="html_resources/rmb.png"/>.  </p><p>    There are 2 pins on the IOBox at present:  <ul>  <li><pin>Y Input Value</pin></li>  <li><pin>Y Output Value</pin></li>  </ul>  </p><p>    However, there are many hidden pins on the IOBox that can configure it in all sorts of ways. To see these hidden pins, we need to use the <node>Inspektor</node>.  </p><p>    To open the <node>Inspektor</node>:  <ol>  <li>Select the <node>IOBox</node> with a single <img src="html_resources/click.png"/><img src="html_resources/lmb.png"/> (it should now be highlighted. To deselect an object, <img src="html_resources/click.png"/><img src="html_resources/lmb.png"/> in an empty area of the patch).</li>  <li>Press <key>Ctrl</key>+<key>I</key>. This should bring up the <node>Inspektor</node> window.  </ol>    The <node>Inspektor</node> will show you hidden properties about whatever you have selected.  </p><p>    The pins shown in the <node>Inspektor</node> are split into 3 areas:  <ul>  <li><b>Config pins</b> - These pins can only be edited using the Inspektor.</li>  <li><b>Input pins</b></li>  <li><b>Output pins</b></li>  </ul></p>
+<h2>1 - Configuring a set of sliders I</h2>
+<p>  With the <node>Inspektor</node> open, let's change some settings of the <node>IOBox</node>.  </p><p>    First let's make our <node>IOBox</node> work with 8 values at once. We do this by setting the following configuration properties:    <ul>  <li>Set <pin>SliceCount Mode</pin> to 'ColsRowsPages' (remember to use <img src="html_resources/click.png"/><img src="html_resources/rmb.png"/> to change variables</li>  <li>Set <pin>Columns</pin> to '4'</li>  </ul>  </p><p>    Now let's resize the <node>IOBox</node>. To do this move your cursor to the bottom edge of the node on the right hand side, your cursor should change to a resize icon. Now drag out the size of the node.  </p><p>    We should have 4 values shown.</p>
+<h2>2 - Configuring a set of sliders II</h2>
+<p>  Now let's change the visual style. </p><p>    <ul>  <li>Turn <b>on</b> <pin>Show Grid</pin></li>  <li>Turn <b>off</b> <pin>Show Value</pin></li>  <li>Turn <b>on</b> <pin>Show Slider</pin></li>  <li>Set <pin>Slider Behaviour</pin> to <b>Slider</b></li  </ul>    Let's visualise the output of this. <img src="html_resources/click2.png"/><img src="html_resources/rmb.png"/> and select <b>4D Vector</b>. Put this beneath your sliders and connect the <pin>Y Value Output</pin> of your sliders to the <pin>Y Value Input</pin> of your 4D Vector <node>IOBox</node>.  </p><p>    Now try interacting with your sliders by dragging the right mouse button <img src="html_resources/hold.png"/><img src="html_resources/rmb.png"/> up and down on each slider.  </p><p>    We find that the sliders can move between -1000 and 1000. We can change this range using the <pin>Minimum</pin> and <pin>Maximum</pin> Values in the <node>Inspektor</node>.</p>
+<h2>3 - Help patches</h2>
+<p>  VVVV has a built in help mechanism for most common nodes. To open a <concept>Help Patch</concept>, select a node <img src="html_resources/click.png"/><img src="html_resources/lmb.png"/>(e.g. an <node>IOBox</node>) and press <key>F1</key>.  </p><p>    The <node>IOBox</node> help patch displays a thorough set of information about how that node works.  </p><p>    Let's try another one. First create a <node>Homography (Transform 2d)</node> node. Then select it <img src="html_resources/click.png"/><img src="html_resources/lmb.png"/> and press <key>F1</key>.  </p><p>    Try interacting with the top right <node>IOBox</node></p>
+</body>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
-   <PATCH nodename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\5. Transforms.v4p" filename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\5. Transforms.v4p" locked="0" systemname="5. Transforms">
+   <PATCH nodename="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\5. Transforms.v4p" filename="C:\kimchiandchips\Workshops\VVVV-basics,mapping\5. Transforms.v4p" locked="0" systemname="5. Transforms">
    <BOUNDS height="14025" left="13455" top="600" type="Window" width="8370">
    </BOUNDS>
    <NODE componentmode="InABox" id="0" nodename="IOBox (String)" systemname="IOBox (String)">
@@ -111,7 +111,7 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
-   <PIN pinname="Size" slicecount="1" values="12">
+   <PIN pinname="Size" slicecount="1" values="10">
    </PIN>
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Tags">
    </PIN>
@@ -402,6 +402,6 @@
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="86" srcpinname="Layer" dstnodeid="85" dstpinname="Layers">
+   <LINK dstnodeid="85" dstpinname="Layers" srcnodeid="86" srcpinname="Layer">
    </LINK>
    </PATCH>

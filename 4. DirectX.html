@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<html>
+<head>
+<title>Annotations</title>
+<script>
+		document.createElement('node');
+		document.createElement('pin');
+		document.createElement('key');
+		document.createElement('concept');
+	
+		document.createElement('lmb');
+		document.createElement('rmb');
+		document.createElement('mmb');
+		document.createElement('scroll');
+		
+		document.createElement('click');
+		document.createElement('click2');
+		document.createElement('hold');
+		document.createElement('release');
+	</script>
+<link rel="stylesheet" type="text/css" href="html_resources/style.css" />
+</head>
+<body>
+<img src="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\4. DirectX.png" />
+<h2>0 - DirectX</h2>
+<p>  Now that we have a basic understanding of the VVVV interface, we can start to understand how to generate graphics.  </p><p>    First lets try the most simple type of drawing. Let's create a <node>Quad</node> and a <node>Renderer (EX9)</node>. Connect them together from <node>Quad</node>'s <pin>Layer</pin> output to <node>Renderer</node>'s <pin>Layers</pin> input.</p>
+<h2>1 - Window modes</h2>
+<p>  With the <node>Renderer</node> selected. Try the following key combinations:    <ul>  <li><b><key>Alt</key>+<key>3</key></b> - Hidden</li>  <li><b><key>Alt</key>+<key>2</key></b> - Inside the patch</li>  <li><b><key>Alt</key>+<key>1</key></b> - In a seperate window</li>  <li><b><key>Alt</key>+<key>Enter</key></b> - Fullscreen</li>  </ul>  </p><p>  You can now press <key>Alt</key>+<key>Enter</key> again to exit fullscreen.</p>
+<h2>2 - Blend mode</h2>
+<p>  Let's create a new node above <node>Quad</node> called <node>Fill (EX9.RenderState)</node>  </p><p>    Connect it's output to <node>Quad</node>'s <pin>Render State</pin> input.</p><p>    Now create an enum IOBox above Fill. This time we'll use another shortcut. First <img src="html_resources/click.png"/><img src="html_resources/lmb.png"/> on the top right pin <pin>Fill Mode</pin> to start creating a link. Then move your mouse away and do a <img src="html_resources/click.png"/><img src="html_resources/mmb.png"/> to create a new matching IOBox.  </p><p>    Try selecting different fill modes in the IOBox (remember to use <img src="html_resources/click.png"/><img src="html_resources/rmb.png"/>).</p>
+<h2>3 - Group</h2>
+<p>  The <node>Renderer</node> node has only 1 <pin>Layers</pin> input, and in VVVV, each <pin>input</pin> can only only accept 1 Link. So how do we connect multiple objects to 1 Renderer?  </p><p>    For this, we use the <node>Group (EX9)</node>. Let's create some nodes, from the top let's create:  <ul>  <li>A <node>Quad</node> and a <node>Text (EX9)</node></li>  <li>A <node>Group (EX9)</node> node</li>  <li>A <node>Renderer (EX9)</node></li>  </ul>    </p><p>    First connect the <node>Group</node> to the <node>Renderer</node>, then connect the <node>Text</node> to the <node>Group</node>'s <pin>Layer 2</pin> input pin. Now you should be rendering the text "vvvv". You can change this text using the 3rd input pin <pin>Text</pin> on the <node>Text</node> node.  </p><p>    Now connect the <node>Quad</node> to the <pin>Layer 1</pin> input of <node>Group</node>. Both objects should now be drawing.  </p><p>    Since they are both the same colour, it is a little confusing to see. So let's change the colour of the Quad:    <ol>  <li>Create a new node at the top called <node>HSL (Color Join)</node>. </li>  <li>Attach the <pin>Output</pin> of <node>HSL</node> to the <pin>Color</pin> input of <node>Quad</node></li>  <li>Change the <pin>Lightness</pin> pin of <node>HSL</node> to around <b>0.2</b></li>  <li>Change the <pin>Hue</pin> to <b>0</b></li>  </ol>  </p><p>    You should now have some white text drawn on top of a red quad.  </p><p>    The order in which inputs are made to the <node>Group</node> node depicts what order the objects are drawn to the screen, i.e. since the <node>Quad</node> is connected to <pin>Layer 1</pin>, we draw this object first, and then the <node>Text</node> which is connected to <pin>Layer 2</pin>. This means that the Text is drawn on top of the Quad, since it is drawn second, and because there is no other depth queues in the scene.  </p><p>    To change the size of the quad to fit the text, let's make a new node above <node>Quad</node> called <node>Scale (Transform)</node>. Connect the <pin>Transform Out</pin> of <node>Scale</node> to the <pin>Transform</pin> input of <node>Quad</node>. Now try editing the <pin>x</pin>, <pin>y</pin> and <pin>z</pin> inputs of <node>Scale</node></p>
+</body>
+</html>

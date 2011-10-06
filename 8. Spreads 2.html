@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<html>
+<head>
+<title>Annotations</title>
+<script>
+		document.createElement('node');
+		document.createElement('pin');
+		document.createElement('key');
+		document.createElement('concept');
+	
+		document.createElement('lmb');
+		document.createElement('rmb');
+		document.createElement('mmb');
+		document.createElement('scroll');
+		
+		document.createElement('click');
+		document.createElement('click2');
+		document.createElement('hold');
+		document.createElement('release');
+	</script>
+<link rel="stylesheet" type="text/css" href="html_resources/style.css" />
+</head>
+<body>
+<img src="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\8. Spreads 2.png" />
+<h2>0 - Vectors</h2>
+<p>  A <concept>Vector</concept> is represented by a Spread. A Spread of Vectors is represented also by a Spread.  </p><p>    A Spread with Spread Count <b>6</b> could either be a Spread of 3 2D Vectors, or a Spread of 2 3D Vectors. VVVV is totally agnostic about this. It just sees numbers.  </p><p>    Let's try this out:  <ol>  <li>Make 2 <b>Vector 2D</b> <node>IOBox</node>'s. </li>  <li>Make a <node>Cons (Spreads)</node> node</li>  <li>Make a <b>Vector 4D</b> <node>IOBox</node> </li>  </p><p>    Connect the 2 2D <node>IOBox</node>'s to the 2 inputs of <node>Cons</node>. And connect the 4D <node>IOBox</node> to the output of <node>Cons</node>.  </p><p>    If we edit the values in the top boxes, we can see the values change in the bottom box. The 2 2D vectors become a 4D vector.  </p><p>    The <node>Cons</node> node glues spreads together. It is short for <concept>Concatenate</concept>  </p><p></p>
+<h2>1 - Vectors 2</h2>
+<p>  Now try this situation:  </p><p>  <ol>  <li>2 <b>3D Vector</b> <node>IOBox</node>'s attached to the inputs of a a <node>Vector (2D Join)</node></li>  <li>Create a <node>Vector (3D split)</node> and connect the <pin>XY</pin> output of <node>Vector (2D Join)</node> to the <pin>XYZ</pin> input of <node>Vector (3D Split)</node>.</li>  <li>Add 3 <b>Vector 2D</b> <node>IOBox</node>'s to the 3 outputs of <node>Vector (3D Split)</node></li>  </ol>  </p><p>    Here we must embrace that the numbers are free to lose their identity at any point. We've input 2 3D vectors, which arrive at the <node>Vector (2D Join)</node>. At this point all the values on the left become <pin>X</pin> values, and all the values on the right become <pin>Y</pin> values. Therefore the identity of the numbers become <b>3 sets of 2D vectors</b> or in VVVV speak (and specifically, what comes on the output of that node) <b>A Spread of 2D Vectors with Spread Count 3</b>.  </p><p>    In this case, the <b>Vector 3D</b> <node>IOBox</node>'s simply become convenient input methods for spreads of 3 values.  </p><p>    Then anyway, we lose our  <b>A Spread of 2D Vectors with Spread Count 3</b> identity again, by passing the spread into the <node>Vector (3D Split)</node> node. At this point the spread of 6 values is interpreted as <b>A Spread of 3D Vectors with Spread Count 2</b>.  </p><p>    This is then split out onto the output <node>IOBox</node>'s</p>
+<h2>2 - Vectors 3</h2>
+<p>  OK. Let's keep up :)  </p><p>    Now try:  </p><p>  <ol>  <li>1 <b>3D Vector</b> <node>IOBox</node> attached to the <pin>X</pin> input of a <node>Vector (2D Join)</node></li>  <li>1 ordinary <node>IOBox</node> attached to the <pin>Y</pin> input of the node>Vector (2D Join)</node></li>  <li>Create a <node>Vector (2D split)</node> and connect the <pin>XY</pin> output of <node>Vector (2D Join)</node> to the <pin>XY</pin> input of <node>Vector (2D Split)</node>.</li>  <li>Add 2 <b>Vector 3D</b> <node>IOBox</node>'s to the <pin>X</pin> and <pin>Y</pin> outputs of <node>Vector (3D Split)</node></li>  </ol>  </p><p>    Here we have a spread of 3 2D vectors. And we see that the Y value is repeated. We can visualise this more by:  <ol>  <li>Create an <node>IOBox</node></li>  <li>Goto the Inspektor <key>Ctrl</key>+<key>I</key></li>  <li>Set the <pin>Rows</pin> of the <node>IOBox</node> to 6</li>  <li>Connect the <pin>XY</pin> output of <node>Vector (2D Join)</node> to the input of the new <node>IOBox</node></li>  </ol>  </p><p>  Notice how the Y value <concept>Interleaves</concept> the X values in the Spread.</p>
+<h2>3 - Cross</h2>
+<p>  Let's grab our rings patch from before.  </p><p>    Set the <pin>Spread Count</pin> of the <node>LinearSpread</node> to <b>4</b>.    Now duplicate the <node>LinearSpread</node> and attach the second one to the <pin>Y</pin> input of <node>Translate</node>  </p><p>      Ok we've got 2 spreads going in, each of Spread Count <b>4</b>, and we've got 4 rings being rendered. But what if we want a grid of 4x4 rings? Then we use the <node>Cross</node> node!  </p><p>    Attach the 2 <node>LinearSpread</node>'s to the <pin>X In</pin> and <pin>Y In</pin> inputs of the <node>Cross</node> node respectively.  </p><p>    Connect the <pin>X Out</pin> and <pin>Y Out</pin> output pins of <node>Cross</node> to the <pin>X</pin> and <pin>Y</pin> inputs of <node>Translate</node>.  </p><p>    You should now have 16 rings instead of 4.  </p><p>    You may also notice that it's possible to use the same <node>LinearSpread</node> for both inputs on the <node>Cross</node> as they are giving identical output.  </p><p>    Otherwise you can make a different grid (e.g. 6x4).</p>
+<h2>4 - CircularSpread</h2>
+<p>  Now to keep the patch simple, we will use the <node>GDI (Renderer)</node>:    <ol>  <li>Create a <node>Renderer (GDI)</node> and use <key>Alt</key>+<key>3</key> to put it into the patch (rather than a seperate window).</li>  <li>Create a <node>Point (GDI)</node> and attach its output pin to the <pin>Layers</pin> input pin of <node>Renderer</node></li>  </ol>  </p><p>    Now we should have a small cross rendered the the screen. We can change this graphic by changing the <pin>Type</pin> pin on the <node>Point</node> node.  </p><p>    Now create a <node>CircularSpread</node> node above the <node>Point</node>, and attach the <pin>Output X</pin> and <pin>Output Y</pin> pins of <node>CircularSpread</node> to the <pin>X</pin> and <pin>Y</pin> inpputs of <node>Points</node> respectively.  </p><p>    Increase the Spread Count on the <node>CircularSpread</node> (e.g. to <b>10</b>).  </p><p>    You should now have a circle of circles.</p>
+<h2>5 - And now animate</h2>
+<p>  Add an <node>LFO</node> to the <pin>Phase</pin> pin of <node>CircularSpread</node>.  </p><p>    Reduce the <pin>Period</pin> of the <node>LFO</node> to <b>3 seconds</b>.</p>
+</body>
+</html>

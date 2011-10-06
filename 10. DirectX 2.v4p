@@ -1,0 +1,489 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
+   <PATCH nodename="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\10. DirectX 2.v4p" filename="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\9. DirectX 2.v4p" locked="0" systemname="9. DirectX 2">
+   <BOUNDS height="13725" left="5310" top="600" type="Window" width="16800">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="0" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="150" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="1095" left="225" top="150" type="Box" width="7665">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|10. DirectX 2|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="42">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="2" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="105" top="12405" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="750" left="105" top="12405" type="Box" width="5325">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Created by Elliot Woods.&cr;&lf;Distributed under the MIT license (check file LICENSE) for details.&cr;&lf;Generally you can do whatever you want with these files. have fun!|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="5" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5805" top="2640" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="540" left="5805" top="2640" type="Box" width="2085">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Author">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="6" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="1260" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="1155" left="225" top="1260" type="Box" width="7665">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Description">
+   </PIN>
+   </NODE>
+   <INFO author="Elliot Woods" description="Setting the &apos;Quality settings&apos; of the Renderer, and the VVVV performance meter" tags="Inspektor, Renderer, Antialiasing, Depth buffer, Fullscreen resolutions">
+   </INFO>
+   <NODE componentmode="Hidden" filename="Subpatches\GetMetadata (VVVV).v4p" hiddenwhenlocked="1" id="10" nodename="GetMetadata (VVVV)" systemname="GetMetadata (VVVV)">
+   <BOUNDS height="100" left="5820" top="1800" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   <BOUNDS height="3465" left="14520" top="5520" type="Window" width="4680">
+   </BOUNDS>
+   <PIN pinname="Author" visible="1">
+   </PIN>
+   <PIN pinname="Description" visible="1">
+   </PIN>
+   <PIN pinname="Tags" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="8" nodename="PatchAlias (VVVV)" systemname="PatchAlias (VVVV)">
+   <BOUNDS height="100" left="5820" top="1350" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="10" dstpinname="Patch" hiddenwhenlocked="1" srcnodeid="8" srcpinname="Patch">
+   </LINK>
+   <LINK dstnodeid="6" dstpinname="Input String" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="10" srcpinname="Description">
+   <LINKPOINT x="6445" y="2205">
+   </LINKPOINT>
+   <LINKPOINT x="245" y="2355">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="InABox" id="11" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="2640" type="Node" width="1380">
+   </BOUNDS>
+   <BOUNDS height="540" left="225" top="2640" type="Box" width="5520">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Tags">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="11" dstpinname="Input String" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="10" srcpinname="Tags">
+   <LINKPOINT x="7015" y="2293">
+   </LINKPOINT>
+   <LINKPOINT x="275" y="2448">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="5" dstpinname="Input String" hiddenwhenlocked="1" srcnodeid="10" srcpinname="Author">
+   </LINK>
+   <NODE componentmode="InABox" id="103" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="8145" top="3465" type="Node" width="330">
+   </BOUNDS>
+   <BOUNDS height="7515" left="8145" top="3465" type="Box" width="345">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="||">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="12" nodename="IOBox (String)" systemname="IOBox (String)">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[0 - Quality settings]&cr;&lf;&cr;&lf;The &lt;node&gt;Renderer (EX9)&lt;/node&gt; has plenty of settings hidden away in the &lt;node&gt;Inspektor&lt;/node&gt;. Here are some of the ones you definitely want to become familiar with:&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;&lt;ul&gt;&cr;&lf;&lt;li&gt;&lt;pin&gt;Fullscreen Depthbuffer&lt;/pin&gt; - For 3D scenes you generall want to turn this &apos;on&apos;, i.e. choose a setting other than &lt;b&gt;NONE&lt;/b&gt;. The &lt;concept&gt;Depth Buffer&lt;/concept&gt; is what that graphics card uses to detect when objects are in front of each other, so it knows how to draw them properly&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;pin&gt;Fullscreen Dimensions&lt;/pin&gt; - When you make your renderer fullscreen, this is the resolution that it will use. The renderer will become fullscreen on whatever screen it is on at that time, i.e. if you want it to come up on the second screen, you must drag the renderer window to there before going fullscreen. Also by doing this, you will have the correct list of resolutions for that screen&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;pin&gt;Fullscreen Antialiasing&lt;/pin&gt; - This smooths the edges of objects, generally turn this on to make graphics look detailed and smooth. Depending on your graphics card different options will be available.&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;pin&gt;Windowed Depthbuffer&lt;/pin&gt; - Same as &lt;pin&gt;Fullscreen Depthbuffer&lt;/pin&gt;, but this option applies instead when the renderer is not fullscreen&lt;/li&gt;&cr;&lf;&lt;li&gt;&lt;pin&gt;Windowed Antialiasing&lt;/pin&gt; - Same as above&lt;/li&gt;&cr;&lf;&lt;/ul&gt;&cr;&lf;&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;The most important thing most of the time is to make sure to turn on Antialiasing and Depthbuffer.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;To demonstrate this, I&apos;ve created 3 renderers at the side which share a common scene and a common camera. They each have different settings for &lt;pin&gt;Windowed Antialiasing&lt;/pin&gt; and &lt;pin&gt;Windowed Depthbuffer&lt;/pin&gt;.&cr;&lf;&cr;&lf;WARNING: The &lt;node&gt;Inspektor&lt;/node&gt; locked inside this patch will block you opening up another &lt;node&gt;Inspektor&lt;/node&gt;. But if you turn off the &lt;b&gt;Attached&lt;/b&gt; button, then it will start acting like a normal &lt;node&gt;Inspektor&lt;/node&gt; (albeit inside the patch rather than in a window).|">
+   </PIN>
+   <BOUNDS height="270" left="2760" top="3765" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="375" left="2760" top="3765" type="Box" width="2460">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="181" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <BOUNDS height="100" left="1455" top="4470" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1635" left="1455" top="4470" type="Box" width="3705">
+   </BOUNDS>
+   <BOUNDS height="5010" left="8835" top="6315" type="Window" width="6240">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Inspektor (VVVV)" nodename="Inspektor (VVVV)" componentmode="InABox" id="208">
+   <BOUNDS type="Node" left="3525" top="4260" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3525" top="4260" width="4380" height="6555">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10110" top="8490" width="5100" height="8250">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="209">
+   <BOUNDS type="Node" left="8925" top="2010" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8925" top="2010" width="3615" height="2790">
+   </BOUNDS>
+   <BOUNDS type="Window" left="14910" top="4560" width="6240" height="5010">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Teapot (EX9.Geometry)" nodename="Teapot (EX9.Geometry)" componentmode="Hidden" id="210">
+   <BOUNDS type="Node" left="9060" top="765" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\modules\vvvv group\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="211" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="11535" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GouraudDirectional (EX9.Effect)" filename="%VVVV%\effects\GouraudDirectional.fx" nodename="GouraudDirectional (EX9.Effect)" componentmode="Hidden" id="212">
+   <BOUNDS type="Node" left="8925" top="1440" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="212" srcpinname="Layer" dstnodeid="209" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="210" srcpinname="Mesh" dstnodeid="212" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="211" srcpinname="View" dstnodeid="209" dstpinname="View" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="211" srcpinname="Projection" dstnodeid="209" dstpinname="Projection" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="11910" y="1883">
+   </LINKPOINT>
+   <LINKPOINT x="12090" y="1883">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="214">
+   <BOUNDS type="Node" left="9240" top="1080" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" slicecount="1" values="10">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="214" srcpinname="Transform Out" dstnodeid="212" dstpinname="Transform">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="216" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="9060" top="4935" width="1245" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9060" top="4935" width="1290" height="420">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Antialiasing: off&cr;&lf;Depth buffer: off|" encoded="0">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="220">
+   <BOUNDS type="Node" left="12675" top="1980" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12675" top="1980" width="3615" height="2790">
+   </BOUNDS>
+   <BOUNDS type="Window" left="14910" top="4560" width="6240" height="5010">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D16">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="212" srcpinname="Layer" dstnodeid="220" dstpinname="Layers" linkstyle="VHV">
+   <LINKPOINT x="8985" y="1830">
+   </LINKPOINT>
+   <LINKPOINT x="12675" y="1830">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="211" srcpinname="View" dstnodeid="220" dstpinname="View" hiddenwhenlocked="1" linkstyle="VHV">
+   </LINK>
+   <LINK srcnodeid="211" srcpinname="Projection" dstnodeid="220" dstpinname="Projection" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="13130" y="2380">
+   </LINKPOINT>
+   <LINKPOINT x="14605" y="1370">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="222">
+   <BOUNDS type="Node" left="8925" top="5655" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8925" top="5655" width="3615" height="2790">
+   </BOUNDS>
+   <BOUNDS type="Window" left="14910" top="4560" width="6240" height="5010">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D16">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="221" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8985" top="8565" width="1245" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8985" top="8565" width="1695" height="1575">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" encoded="0" values="|Antialiasing: on&cr;&lf;Depth buffer: on&cr;&lf;&cr;&lf;These settings may not work on NVidia. If not, try turning on the Antialiasing yourself!|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="211" srcpinname="View" dstnodeid="222" dstpinname="View" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="211" srcpinname="Projection" dstnodeid="222" dstpinname="Projection" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="11880" y="4105">
+   </LINKPOINT>
+   <LINKPOINT x="12105" y="3320">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="212" srcpinname="Layer" dstnodeid="222" dstpinname="Layers">
+   </LINK>
+   <NODE componentmode="InABox" id="223" nodename="IOBox (String)" systemname="IOBox (String)">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[1 - Multiple renderers]&cr;&lf;Here we&apos;re also demonstraing something that VVVV does effortlessly:&cr;&lf;&lt;br /&gt;&cr;&lf;Rendering the same objects to multiple &lt;node&gt;Renderer&lt;/node&gt;&apos;s.&cr;&lf;&lt;br /&gt;&cr;&lf;In fact, with VVVV you can mix and match &lt;node&gt;Renderer&lt;/node&gt;&apos;s however you like. It&apos;s a real strength of the platform. And something that isn&apos;t properly available on any other hardware accelerated platform for media arts use.|">
+   </PIN>
+   <BOUNDS height="270" left="12915" top="6030" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="375" left="12915" top="6030" type="Box" width="2775">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="224">
+   <BOUNDS type="Node" left="12195" top="9165" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12195" top="9165" width="4215" height="3615">
+   </BOUNDS>
+   <BOUNDS type="Window" left="17850" top="10980" width="6240" height="5010">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D16">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="225">
+   <BOUNDS type="Node" left="12180" top="8640" width="1290" height="270">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="225" srcpinname="Layer" dstnodeid="224" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="212" srcpinname="Layer" dstnodeid="225" dstpinname="Layer 1" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="8870" y="5300">
+   </LINKPOINT>
+   <LINKPOINT x="12295" y="5050">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="PerfMeter (Debug)" filename="%VVVV%\modules\catweasel\Debug\PerfMeter (Debug).v4p" nodename="PerfMeter (Debug)" componentmode="Hidden" id="226">
+   <BOUNDS type="Node" left="12810" top="8205" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="226" srcpinname="Layer" dstnodeid="225" dstpinname="Layer 2">
+   </LINK>
+   <NODE componentmode="InABox" id="227" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="11565" top="8550" type="Node" width="330">
+   </BOUNDS>
+   <BOUNDS height="4335" left="11565" top="8550" type="Box" width="345">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="||">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="211" srcpinname="View" dstnodeid="224" dstpinname="View" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="11745" y="5468">
+   </LINKPOINT>
+   <LINKPOINT x="15435" y="5468">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="211" srcpinname="Projection" dstnodeid="224" dstpinname="Projection" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="11910" y="5468">
+   </LINKPOINT>
+   <LINKPOINT x="15885" y="5468">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="InABox" id="228" nodename="IOBox (String)" systemname="IOBox (String)">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|[2 - Perfmeter]&cr;&lf;The &lt;node&gt;PerfMeter (Debug)&lt;/node&gt; node gives you vital information about how your computer is performing and what is slowing it down.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;The big number is the &lt;concept&gt;Framerate&lt;/concept&gt; which is measured in &lt;concept&gt;Frames Per Second (fps)&lt;/concept&gt;. You generally want this to be the same as your &lt;concept&gt;Refresh rate&lt;/concept&gt; (commonly 60Hz, therefore 60fps is best).&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;The running graph is the history of your framerate, and the other graphs give you more detailed information as to what is taking up your processing time.&cr;&lf;&lt;br /&gt;&cr;&lf;&cr;&lf;An ideal situation is generally a nice flat line at 60fps.|">
+   </PIN>
+   <BOUNDS height="270" left="13395" top="7725" type="Node" width="2070">
+   </BOUNDS>
+   <BOUNDS height="390" left="13395" top="7725" type="Box" width="1875">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Arial Black|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE id="219" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="12795" top="4890" width="1245" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12795" top="4890" width="1290" height="420">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" encoded="0" pintype="Input" values="|Antialiasing: off&cr;&lf;Depth buffer: on|">
+   </PIN>
+   <PIN pinname="Output String" visible="0" pintype="Output">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" pintype="Configuration" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="MultiLine">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||" encoded="0">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Default" pintype="Configuration" slicecount="1" values="||" encoded="0">
+   </PIN>
+   <PIN pinname="File Mask" pintype="Configuration" slicecount="1" values="||" encoded="0">
+   </PIN>
+   <PIN pinname="Maximum Characters" pintype="Configuration" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Character Encoding" pintype="Configuration" slicecount="1" values="ANSI">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   </PATCH>

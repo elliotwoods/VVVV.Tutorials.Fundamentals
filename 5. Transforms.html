@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<html>
+<head>
+<title>Annotations</title>
+<script>
+		document.createElement('node');
+		document.createElement('pin');
+		document.createElement('key');
+		document.createElement('concept');
+	
+		document.createElement('lmb');
+		document.createElement('rmb');
+		document.createElement('mmb');
+		document.createElement('scroll');
+		
+		document.createElement('click');
+		document.createElement('click2');
+		document.createElement('hold');
+		document.createElement('release');
+	</script>
+<link rel="stylesheet" type="text/css" href="html_resources/style.css" />
+</head>
+<body>
+<img src="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\5. Transforms.png" />
+<h2></h2>
+<p></p>
+<h2>0 - Transforms</h2>
+<p>  Let's setup a <node>Quad</node> with a <node>Renderer</node>.  </p><p>    Now let's add a <node>Transform 2d</node> above the <node>Quad</node>.  </p><p>    If we try and manipulate the input pins on the <node>Transform</node>, then we can see how we can move, scale and rotate the object in a simple way  </p><p></p>
+<h2>1 - Vector transforms</h2>
+<p>  The <node>Transform (2d)</node> is good to get started and for a range of tasks, but let's also have a look at a different way of dealing with transforms which can be more elegant.  </p><p>    Select your <node>Renderer</node> and <node>Quad</node> by dragging <img src="html_resources/hold.png"/><img src="html_resources/lmb.png"/> a selection box around the 2 nodes. Then duplicate these 2 nodes using <key>Ctrl</key>+<key>D</key> to duplicate. You should now have a copy of the <node>Quad</node> and the <node>Renderer</node>. Move these further down the patch.  </p><p>    Now lets add a <node>Scale (Transform Vector)</node> and a <node>Translate (Transform Vector)</node>. Connect the <pin>Transform Out</pin> of <node>Translate</node> into the <pin>Transform In</pin> of <node>Scale</node> and connect the <pin>Transform Out</pin> of <node>Scale</node> to the <pin>Transform</pin> input of <node>Quad</node>.  </p><p>    Now create 2 <b>Vector 3D</b> <node>IOBox</node>'s using the double right click <img src="html_resources/click2.png"/><img src="html_resources/rmb.png"/> quick menu.  </p><p>    Connect these 2 new <node>IOBox</node>'s to the <node>Scale</node> and <node>Transform</node> node's <pin>XYZ</pin> inputs.  </p><p>    Since your scale's input value is set to <b>0,0,0</b> your quad has no size. Increase this to <b>1,1,1</b>. (Note: a quick way of doing this is to <img src="html_resources/click.png"/><img src="html_resources/rmb.png"/> on the <node>IOBox</node>'s <pin>Input Value Y</pin> and type <key>1</key> then <key>Enter</key>. This will set all slices in the spread to 1.</p>
+<h2>3 - Rotation</h2>
+<p>  Now let's add another transform to the <concept>Transform stack</concept>. Let's add a <node>Rotate</node> at the top in the same way we added the <node>Translate</node> and <node>Scale</node>.  </p><p>    The units of rotation in VVVV are :  <ul>  <li><b>0</b> = no rotation</li>  <li><b>0.25</b> = 90 degrees (quarter rotation)</li>  <li><b>0.5</b> = 180 degrees (half rotation)</li>  <li><b>1</b> = 360 degrees (full rotation), back to the beginning</li>    </ul>  </p><p>    This normalisation of rotations may seem strange, but it becomes very useful for quickly doing maths with rotations and imagining them yourself.  </p><p>    In VVVV, simple rotations are about 3 axes (corresponding the input <pin>XYZ</pin> on <node>Rotate (Transform Vector)</node>). These are:    <ul>  <li>X - Rotation about the positive X axis (the axis pointing right)</li>  <li>Y - Rotation about the positive Y axis (the axis pointing up)</li>  <li>Z - Rotation about the positive Z axis (the axis pointing out of the screen towards you)</li>  </ul>  </p><p>    For standard 2D rotations, you'll want to spin the object in the axis pointing out of the screen.  </p><p></p>
+<h2>4 - Transform order</h2>
+<p>  In computer graphics. The order in which transforms are performed is important, e.g.:    <ul>  <li><b>Rotate then translate</b> - Spin the object around the origin (the center of the object), then move it</li>  <li><b>Translate then rotate</b> - Move the object (hence move the center of the object), then spin the object around the origin (This causes the object to orbit around the center of the space).</li>  </ul>  </p><p>    Try to put the transforms in different orders to understand how this works. More on this later.  </ul></p>
+</body>
+</html>

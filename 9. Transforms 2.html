@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<html>
+<head>
+<title>Annotations</title>
+<script>
+		document.createElement('node');
+		document.createElement('pin');
+		document.createElement('key');
+		document.createElement('concept');
+	
+		document.createElement('lmb');
+		document.createElement('rmb');
+		document.createElement('mmb');
+		document.createElement('scroll');
+		
+		document.createElement('click');
+		document.createElement('click2');
+		document.createElement('hold');
+		document.createElement('release');
+	</script>
+<link rel="stylesheet" type="text/css" href="html_resources/style.css" />
+</head>
+<body>
+<img src="C:\kimchiandchips\Workshops\VVVV.Tutorials.Fundamentals\9. Transforms 2.png" />
+<h2>0 - Object, World, View, Projection</h2>
+<p>  Within the 3D world of computer graphics, there are many spaces. The most general ones are:  <ul>  <li><concept>Object</concept> - The coordinates within the object</li>  <li><concept>World</concept> - The coordinates with the world containing all the objects. When we transformed our quads before, we were transforming them in the world space. This is a <concept>Euclidean</concept> coordinate system, i.e. right angles are preserved </li>  <li><concept>View</concept> - The World transformed from a particular viewpoint's position (trasforming a position is commonly called a translation) and rotation. This space is still Euclidean</li>  <li><concept>Projection</concept> - This is the coordinate system of the camera onto the scene. When a perspective transform is applied to the scene, then this space is non-Euclidean, and is instead <concept>Projective</concept>  </p><p>  Alternatively we can also think of Projection Space (especially when projection mapping) as the coordinate system of the projector. This then becomes the coordinate system which has to match up with real world objects that we are projecting onto</li>  </ul></p>
+<h2>1 - 3D Camera</h2>
+<p>    It may be difficult to admit, but much of our lives are 2D. Our eyes see fundamentally in 2D, and its only by having a pair of them that we get a sense of 3D. But it is only a sense, and in truth, we are always limited to seeing 2D projections of things. This is generally true in computer graphics, especially when displayed on a monitor.  </p><p>    So how do we see something in 3D? Well, we get a camera that we can move!  </p><p>    Create:  <ol>  <li>A <node>Renderer (EX9)</node> and put it into the patch using <key>Alt</key>+<key>2</key></li>  <li>An <node>AxisAndGrid (DX9)</node>. Connect this to the <node>Renderer</node></li>  <li>A <node>Camera (Transform Softimage)</node>.</li>  </ol>    </p><p>  Now hook up the camera.   <ul>  <li>Connect the <pin>View</pin> output of <node>Camera</node> (2nd output) to the <pin>View</pin> input of <node>Renderer</node>.</li>  <li>Do the same for <pin>Projection</pin></li>  </ul>    </p><p>  Now we can see the axis and grid from a perspective viewpoint.    </p><p>  You can use the following controls to manipulate the camera:  </p><p>  <ul>  <li><key>O</key>+<img src="html_resources/hold.png"/><img src="html_resources/lmb.png"/> - Orbit</li>  <li><key>P</key>+<img src="html_resources/hold.png"/><img src="html_resources/rmb.png"/> - Dolly (fast)</li>  <li><key>P</key>+<img src="html_resources/hold.png"/><img src="html_resources/lmb.png"/> - Dolly (slow)</li>  <li><key>Z</key>+<img src="html_resources/hold.png"/><img src="html_resources/lmb.png"/> - Move</li>  <li><key>Z</key>+<img src="html_resources/hold.png"/><img src="html_resources/rmb.png"/> - Zoom</li>  <li>Hold <key>R</key> to reset the view</li>  </ul>    </p><p>    Be careful not to destroy your patch with all those mouse actions!</p>
+<h2>2 - Modules</h2>
+<p>    Bits of code that you want to use all the time can be wrapped up in packages called <concept>Modules</concept>.  </p><p>    Modules are in fact simply subpatches that you use quite often. This <node>Camera</node> node is in fact a module made by a VVVV user. To see inside it, <img src="html_resources/click.png"/><img src="html_resources/rmb.png"/> on it.  </p><p>    Press <key>Alt</key>+<key>3</key> when you're done to hide the patch.</p>
+<h2>3 - 3D vector transforms</h2>
+<p>    Create a copy of the patch we just made, and insert a <node>Group (EX9)</node> between the <node>AxisAndGrid</node> and your <node>Renderer</node>  </p><p>    Create a <node>Sphere (DX9)</node> and attach it to the <pin>Layer 2</pin> input of <node>Group</node>.  </p><p>    Add a <node>Translate (Transform Vector)</node> and attach the output to <node>Sphere</node>'s <pin>Transform</pin> input.  </p><p>    Create a <node>RandomSpread</node> and attach its <pin>Output</pin> to the <node>Translate</node>'s <pin>XYZ</pin> input.  </p><p>    Add an <node>IOBox</node> to <node>RandomSpread</node>'s <pin>Spread Count</pin> input.  </p><p>    Give that <node>IOBox</node> a value of <b>120</b>. This means you have 40 3D vectors, and therefore 40 spheres.  </p><p>    To make them look less blocky. Increase the <pin>Resolution X</pin> and <pin>Resolution Y</pin> pins on the <node>Sphere</node> node. Be careful not to go too high, especially on older graphics cards!</p>
+<h2>3 - More</h2>
+<p>  Now try to give the spheres some colour, and make them move.</p>
+</body>
+</html>
